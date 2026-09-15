@@ -1,0 +1,3 @@
+Led/Src/led.c:5:Led_Init	8	static
+Led/Src/led.c:14:Led_SetColor	0	static
+Led/Src/led.c:21:Led_AllOff	0	static

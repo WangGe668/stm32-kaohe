@@ -1,0 +1,9 @@
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c:142:HAL_EXTI_SetConfigLine	24	static
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c:237:HAL_EXTI_GetConfigLine	16	static
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c:316:HAL_EXTI_ClearConfigLine	16	static
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c:369:HAL_EXTI_RegisterCallback	0	static
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c:394:HAL_EXTI_GetHandle	0	static
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c:434:HAL_EXTI_IRQHandler	0	static
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c:466:HAL_EXTI_GetPending	0	static
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c:498:HAL_EXTI_ClearPending	0	static
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c:522:HAL_EXTI_GenerateSWI	0	static

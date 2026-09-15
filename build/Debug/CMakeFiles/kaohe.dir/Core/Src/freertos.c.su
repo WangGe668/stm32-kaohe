@@ -1,0 +1,5 @@
+Core/Src/freertos.c:58:StartBuzzerTask	0	static
+Core/Src/freertos.c:94:StartLedTask	0	static
+Core/Src/freertos.c:109:ServoSweepTask	0	static
+Core/Src/freertos.c:128:StartCommTask	0	static
+Core/Src/freertos.c:140:StartMotorCtrlTask	0	static

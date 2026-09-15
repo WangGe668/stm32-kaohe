@@ -1,0 +1,4 @@
+Comm/Src/comm.c:41:Comm_Init	0	static
+Comm/Src/comm.c:47:JustFloat_Send	16	static
+Comm/Src/comm.c:55:HAL_UART_RxCpltCallback	32	static
+Comm/Src/comm.c:73:HAL_UART_ErrorCallback	4	static

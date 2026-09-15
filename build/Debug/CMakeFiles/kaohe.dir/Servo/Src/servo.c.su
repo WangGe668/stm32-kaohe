@@ -1,0 +1,2 @@
+Servo/Src/servo.c:5:Servo_Init	0	static
+Servo/Src/servo.c:12:Servo_SetAngle	0	static

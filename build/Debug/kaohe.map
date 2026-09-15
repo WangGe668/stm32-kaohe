@@ -1,0 +1,1204 @@
+STMicroelectronics Memory Configuration
+
+Name     Origin   Length   Bytes-Used %age-Used Attributes
+RAM 0x20000000 0x020000 0x005200       16%  rwx     
+CCMRAM 0x10000000 0x010000 0x000000        0%  rwx     
+FLASH 0x8000000 0x100000 0x005718        2%  rx      
+
+     VMA      LMA     Size Align Out     In      Symbol
+       0        0        0     1 _estack = ORIGIN(RAM) + LENGTH(RAM)
+       0        0        0     1 _sstack = _estack - _Min_Stack_Size
+       0        0        0     1 _Min_Heap_Size = 0x200
+       0        0        0     1 _Min_Stack_Size = 0x400
+ 8000000  8000000      188     1 .isr_vector
+ 8000000  8000000        0     1         . = ALIGN(4)
+ 8000000  8000000      188     1         CMakeFiles/kaohe.dir/startup_stm32f407xx.s.obj:(.isr_vector)
+ 8000000  8000000      188     1                 g_pfnVectors
+ 8000188  8000188        0     1         . = ALIGN(4)
+ 8000190  8000190     53f0    16 .text
+ 8000190  8000190        0     1         . = ALIGN(4)
+ 8000190  8000190       14     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libclang_rt.builtins.a(aeabi_uldivmod.S.obj):(.text)
+ 8000190  8000190        0     1                 $t
+ 8000191  8000191       14     1                 __aeabi_uldivmod
+ 80001a4  80001a4       12     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.text.SystemInit)
+ 80001a4  80001a4        0     1                 $t
+ 80001a5  80001a5       12     1                 SystemInit
+ 80001b8  80001b8       58     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_Base_Init)
+ 80001b8  80001b8        0     1                 $t
+ 80001b9  80001b9       58     1                 HAL_TIM_Base_Init
+ 8000210  8000210      12c     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.TIM_Base_SetConfig)
+ 8000210  8000210        0     1                 $t
+ 8000211  8000211      12c     1                 TIM_Base_SetConfig
+ 800033c  800033c       ac     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_Base_Start_IT)
+ 800033c  800033c        0     1                 $t
+ 800033d  800033d       ac     1                 HAL_TIM_Base_Start_IT
+ 80003e8  80003e8       58     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_PWM_Init)
+ 80003e8  80003e8        0     1                 $t
+ 80003e9  80003e9       58     1                 HAL_TIM_PWM_Init
+ 8000440  8000440      126     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_PWM_Start)
+ 8000440  8000440        0     1                 $t
+ 8000441  8000441      126     1                 HAL_TIM_PWM_Start
+ 8000568  8000568      148     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_IRQHandler)
+ 8000568  8000568        0     1                 $t
+ 8000569  8000569      148     1                 HAL_TIM_IRQHandler
+ 80006b0  80006b0        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_IC_CaptureCallback)
+ 80006b0  80006b0        0     1                 $t
+ 80006b1  80006b1        2     1                 HAL_TIM_IC_CaptureCallback
+ 80006b4  80006b4        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_OC_DelayElapsedCallback)
+ 80006b4  80006b4        0     1                 $t
+ 80006b5  80006b5        2     1                 HAL_TIM_OC_DelayElapsedCallback
+ 80006b8  80006b8        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_PWM_PulseFinishedCallback)
+ 80006b8  80006b8        0     1                 $t
+ 80006b9  80006b9        2     1                 HAL_TIM_PWM_PulseFinishedCallback
+ 80006bc  80006bc        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_TriggerCallback)
+ 80006bc  80006bc        0     1                 $t
+ 80006bd  80006bd        2     1                 HAL_TIM_TriggerCallback
+ 80006c0  80006c0      224     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_PWM_ConfigChannel)
+ 80006c0  80006c0        0     1                 $t
+ 80006c1  80006c1      224     1                 HAL_TIM_PWM_ConfigChannel
+ 80006ea  80006ea        0     1                 $d
+ 80006ee  80006ee        0     1                 $t
+ 80008e4  80008e4      19c     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.text.HAL_TIM_ConfigClockSource)
+ 80008e4  80008e4        0     1                 $t
+ 80008e5  80008e5      19c     1                 HAL_TIM_ConfigClockSource
+ 8000a80  8000a80       c4     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.text.HAL_TIMEx_MasterConfigSynchronization)
+ 8000a80  8000a80        0     1                 $t
+ 8000a81  8000a81       c4     1                 HAL_TIMEx_MasterConfigSynchronization
+ 8000b44  8000b44       54     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.text.HAL_TIMEx_ConfigBreakDeadTime)
+ 8000b44  8000b44        0     1                 $t
+ 8000b45  8000b45       54     1                 HAL_TIMEx_ConfigBreakDeadTime
+ 8000b98  8000b98        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.text.HAL_TIMEx_CommutCallback)
+ 8000b98  8000b98        0     1                 $t
+ 8000b99  8000b99        2     1                 HAL_TIMEx_CommutCallback
+ 8000b9c  8000b9c        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.text.HAL_TIMEx_BreakCallback)
+ 8000b9c  8000b9c        0     1                 $t
+ 8000b9d  8000b9d        2     1                 HAL_TIMEx_BreakCallback
+ 8000ba0  8000ba0       f6     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_Init)
+ 8000ba0  8000ba0        0     1                 $t
+ 8000ba1  8000ba1       f6     1                 HAL_CAN_Init
+ 8000c98  8000c98       ee     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_ConfigFilter)
+ 8000c98  8000c98        0     1                 $t
+ 8000c99  8000c99       ee     1                 HAL_CAN_ConfigFilter
+ 8000d88  8000d88       5a     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_Start)
+ 8000d88  8000d88        0     1                 $t
+ 8000d89  8000d89       5a     1                 HAL_CAN_Start
+ 8000de4  8000de4       a8     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_AddTxMessage)
+ 8000de4  8000de4        0     1                 $t
+ 8000de5  8000de5       a8     1                 HAL_CAN_AddTxMessage
+ 8000e8c  8000e8c      116     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_GetRxMessage)
+ 8000e8c  8000e8c        0     1                 $t
+ 8000e8d  8000e8d      116     1                 HAL_CAN_GetRxMessage
+ 8000fa4  8000fa4       2e     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_ActivateNotification)
+ 8000fa4  8000fa4        0     1                 $t
+ 8000fa5  8000fa5       2e     1                 HAL_CAN_ActivateNotification
+ 8000fd4  8000fd4      242     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_IRQHandler)
+ 8000fd4  8000fd4        0     1                 $t
+ 8000fd5  8000fd5      242     1                 HAL_CAN_IRQHandler
+ 8001128  8001128        0     1                 $d
+ 800112e  800112e        0     1                 $t
+ 8001218  8001218        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_TxMailbox0CompleteCallback)
+ 8001218  8001218        0     1                 $t
+ 8001219  8001219        2     1                 HAL_CAN_TxMailbox0CompleteCallback
+ 800121c  800121c        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_TxMailbox0AbortCallback)
+ 800121c  800121c        0     1                 $t
+ 800121d  800121d        2     1                 HAL_CAN_TxMailbox0AbortCallback
+ 8001220  8001220        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_TxMailbox1CompleteCallback)
+ 8001220  8001220        0     1                 $t
+ 8001221  8001221        2     1                 HAL_CAN_TxMailbox1CompleteCallback
+ 8001224  8001224        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_TxMailbox1AbortCallback)
+ 8001224  8001224        0     1                 $t
+ 8001225  8001225        2     1                 HAL_CAN_TxMailbox1AbortCallback
+ 8001228  8001228        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_TxMailbox2CompleteCallback)
+ 8001228  8001228        0     1                 $t
+ 8001229  8001229        2     1                 HAL_CAN_TxMailbox2CompleteCallback
+ 800122c  800122c        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_TxMailbox2AbortCallback)
+ 800122c  800122c        0     1                 $t
+ 800122d  800122d        2     1                 HAL_CAN_TxMailbox2AbortCallback
+ 8001230  8001230        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_RxFifo0FullCallback)
+ 8001230  8001230        0     1                 $t
+ 8001231  8001231        2     1                 HAL_CAN_RxFifo0FullCallback
+ 8001234  8001234        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_RxFifo1FullCallback)
+ 8001234  8001234        0     1                 $t
+ 8001235  8001235        2     1                 HAL_CAN_RxFifo1FullCallback
+ 8001238  8001238        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_RxFifo1MsgPendingCallback)
+ 8001238  8001238        0     1                 $t
+ 8001239  8001239        2     1                 HAL_CAN_RxFifo1MsgPendingCallback
+ 800123c  800123c        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_SleepCallback)
+ 800123c  800123c        0     1                 $t
+ 800123d  800123d        2     1                 HAL_CAN_SleepCallback
+ 8001240  8001240        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_WakeUpFromRxMsgCallback)
+ 8001240  8001240        0     1                 $t
+ 8001241  8001241        2     1                 HAL_CAN_WakeUpFromRxMsgCallback
+ 8001244  8001244        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.text.HAL_CAN_ErrorCallback)
+ 8001244  8001244        0     1                 $t
+ 8001245  8001245        2     1                 HAL_CAN_ErrorCallback
+ 8001248  8001248      36e     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.text.HAL_RCC_OscConfig)
+ 8001248  8001248        0     1                 $t
+ 8001249  8001249      36e     1                 HAL_RCC_OscConfig
+ 80015b8  80015b8      140     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.text.HAL_RCC_ClockConfig)
+ 80015b8  80015b8        0     1                 $t
+ 80015b9  80015b9      140     1                 HAL_RCC_ClockConfig
+ 80016f8  80016f8       74     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.text.HAL_RCC_GetSysClockFreq)
+ 80016f8  80016f8        0     1                 $t
+ 80016f9  80016f9       74     1                 HAL_RCC_GetSysClockFreq
+ 800171a  800171a        0     1                 $d
+ 800171e  800171e        0     1                 $t
+ 800176c  800176c       26     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.text.HAL_RCC_GetPCLK1Freq)
+ 800176c  800176c        0     1                 $t
+ 800176d  800176d       26     1                 HAL_RCC_GetPCLK1Freq
+ 8001794  8001794       26     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.text.HAL_RCC_GetPCLK2Freq)
+ 8001794  8001794        0     1                 $t
+ 8001795  8001795       26     1                 HAL_RCC_GetPCLK2Freq
+ 80017bc  80017bc       3e     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.text.HAL_RCC_GetClockConfig)
+ 80017bc  80017bc        0     1                 $t
+ 80017bd  80017bd       3e     1                 HAL_RCC_GetClockConfig
+ 80017fc  80017fc      198     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.text.HAL_GPIO_Init)
+ 80017fc  80017fc        0     1                 $t
+ 80017fd  80017fd      198     1                 HAL_GPIO_Init
+ 8001994  8001994        c     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.text.HAL_GPIO_ReadPin)
+ 8001994  8001994        0     1                 $t
+ 8001995  8001995        c     1                 HAL_GPIO_ReadPin
+ 80019a0  80019a0       16     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.text.HAL_GPIO_EXTI_IRQHandler)
+ 80019a0  80019a0        0     1                 $t
+ 80019a1  80019a1       16     1                 HAL_GPIO_EXTI_IRQHandler
+ 80019b8  80019b8       80     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:(.text.HAL_DMA_Abort)
+ 80019b8  80019b8        0     1                 $t
+ 80019b9  80019b9       80     1                 HAL_DMA_Abort
+ 8001a38  8001a38       28     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:(.text.HAL_DMA_Abort_IT)
+ 8001a38  8001a38        0     1                 $t
+ 8001a39  8001a39       28     1                 HAL_DMA_Abort_IT
+ 8001a60  8001a60       20     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.text.HAL_NVIC_SetPriorityGrouping)
+ 8001a60  8001a60        0     1                 $t
+ 8001a61  8001a61       20     1                 HAL_NVIC_SetPriorityGrouping
+ 8001a80  8001a80       5c     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.text.HAL_NVIC_SetPriority)
+ 8001a80  8001a80        0     1                 $t
+ 8001a81  8001a81       5c     1                 HAL_NVIC_SetPriority
+ 8001adc  8001adc       22     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.text.HAL_NVIC_EnableIRQ)
+ 8001adc  8001adc        0     1                 $t
+ 8001add  8001add       22     1                 HAL_NVIC_EnableIRQ
+ 8001b00  8001b00       36     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.text.HAL_Init)
+ 8001b00  8001b00        0     1                 $t
+ 8001b01  8001b01       36     1                 HAL_Init
+ 8001b38  8001b38       1a     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.text.HAL_IncTick)
+ 8001b38  8001b38        0     1                 $t
+ 8001b39  8001b39       1a     1                 HAL_IncTick
+ 8001b54  8001b54        c     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.text.HAL_GetTick)
+ 8001b54  8001b54        0     1                 $t
+ 8001b55  8001b55        c     1                 HAL_GetTick
+ 8001b60  8001b60       28     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.text.HAL_Delay)
+ 8001b60  8001b60        0     1                 $t
+ 8001b61  8001b61       28     1                 HAL_Delay
+ 8001b88  8001b88       5e     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.text.HAL_UART_Init)
+ 8001b88  8001b88        0     1                 $t
+ 8001b89  8001b89       5e     1                 HAL_UART_Init
+ 8001be8  8001be8       e6     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.text.UART_SetConfig)
+ 8001be8  8001be8        0     1                 $t
+ 8001be9  8001be9       e6     1                 UART_SetConfig
+ 8001cd0  8001cd0       fe     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.text.HAL_UART_Transmit)
+ 8001cd0  8001cd0        0     1                 $t
+ 8001cd1  8001cd1       fe     1                 HAL_UART_Transmit
+ 8001dd0  8001dd0       66     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.text.HAL_UART_Receive_IT)
+ 8001dd0  8001dd0        0     1                 $t
+ 8001dd1  8001dd1       66     1                 HAL_UART_Receive_IT
+ 8001e38  8001e38      350     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.text.HAL_UART_IRQHandler)
+ 8001e38  8001e38        0     1                 $t
+ 8001e39  8001e39      350     1                 HAL_UART_IRQHandler
+ 8002188  8002188       d6     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.text.UART_Receive_IT)
+ 8002188  8002188        0     1                 $t
+ 8002189  8002189       d6     1                 UART_Receive_IT
+ 8002260  8002260        c     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.text.UART_DMAAbortOnError)
+ 8002260  8002260        0     1                 $t
+ 8002261  8002261        c     1                 UART_DMAAbortOnError
+ 800226c  800226c        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.text.HAL_UARTEx_RxEventCallback)
+ 800226c  800226c        0     1                 $t
+ 800226d  800226d        2     1                 HAL_UARTEx_RxEventCallback
+ 8002270  8002270        2     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.text.HAL_UART_TxCpltCallback)
+ 8002270  8002270        0     1                 $t
+ 8002271  8002271        2     1                 HAL_UART_TxCpltCallback
+ 8002274  8002274       16     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.text.vListInitialise)
+ 8002274  8002274        0     1                 $t
+ 8002275  8002275       16     1                 vListInitialise
+ 800228c  800228c        6     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.text.vListInitialiseItem)
+ 800228c  800228c        0     1                 $t
+ 800228d  800228d        6     1                 vListInitialiseItem
+ 8002294  8002294       1c     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.text.vListInsertEnd)
+ 8002294  8002294        0     1                 $t
+ 8002295  8002295       1c     1                 vListInsertEnd
+ 80022b0  80022b0       3a     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.text.vListInsert)
+ 80022b0  80022b0        0     1                 $t
+ 80022b1  80022b1       3a     1                 vListInsert
+ 80022ec  80022ec       26     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.text.uxListRemove)
+ 80022ec  80022ec        0     1                 $t
+ 80022ed  80022ed       26     1                 uxListRemove
+ 8002314  8002314       ea     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.text.xQueueGenericCreateStatic)
+ 8002314  8002314        0     1                 $t
+ 8002315  8002315       ea     1                 xQueueGenericCreateStatic
+ 8002400  8002400      226     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.text.xQueueGenericSend)
+ 8002400  8002400        0     1                 $t
+ 8002401  8002401      226     1                 xQueueGenericSend
+ 8002628  8002628       7a     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.text.prvUnlockQueue)
+ 8002628  8002628        0     1                 $t
+ 8002629  8002629       7a     1                 prvUnlockQueue
+ 80026a4  80026a4      1ae     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.text.xQueueReceive)
+ 80026a4  80026a4        0     1                 $t
+ 80026a5  80026a5      1ae     1                 xQueueReceive
+ 8002854  8002854       28     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.text.vQueueAddToRegistry)
+ 8002854  8002854        0     1                 $t
+ 8002855  8002855       28     1                 vQueueAddToRegistry
+ 800287c  800287c       46     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.text.vQueueWaitForMessageRestricted)
+ 800287c  800287c        0     1                 $t
+ 800287d  800287d       46     1                 vQueueWaitForMessageRestricted
+ 80028c4  80028c4       82     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.xTaskCreateStatic)
+ 80028c4  80028c4        0     1                 $t
+ 80028c5  80028c5       82     1                 xTaskCreateStatic
+ 8002948  8002948       a8     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.prvInitialiseNewTask)
+ 8002948  8002948        0     1                 $t
+ 8002949  8002949       a8     1                 prvInitialiseNewTask
+ 80029f0  80029f0      11c     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.prvAddNewTaskToReadyList)
+ 80029f0  80029f0        0     1                 $t
+ 80029f1  80029f1      11c     1                 prvAddNewTaskToReadyList
+ 8002b0c  8002b0c       64     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.xTaskCreate)
+ 8002b0c  8002b0c        0     1                 $t
+ 8002b0d  8002b0d       64     1                 xTaskCreate
+ 8002b70  8002b70       10     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.vTaskSuspendAll)
+ 8002b70  8002b70        0     1                 $t
+ 8002b71  8002b71       10     1                 vTaskSuspendAll
+ 8002b80  8002b80       84     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.prvAddCurrentTaskToDelayedList)
+ 8002b80  8002b80        0     1                 $t
+ 8002b81  8002b81       84     1                 prvAddCurrentTaskToDelayedList
+ 8002c04  8002c04      13a     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.xTaskResumeAll)
+ 8002c04  8002c04        0     1                 $t
+ 8002c05  8002c05      13a     1                 xTaskResumeAll
+ 8002d40  8002d40       aa     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.vTaskDelay)
+ 8002d40  8002d40        0     1                 $t
+ 8002d41  8002d41       aa     1                 vTaskDelay
+ 8002dec  8002dec       92     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.vTaskSwitchContext)
+ 8002dec  8002dec        0     1                 $t
+ 8002ded  8002ded       92     1                 vTaskSwitchContext
+ 8002e80  8002e80      156     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.vTaskStartScheduler)
+ 8002e80  8002e80        0     1                 $t
+ 8002e81  8002e81      156     1                 vTaskStartScheduler
+ 8002fd8  8002fd8       96     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.prvIdleTask)
+ 8002fd8  8002fd8        0     1                 $t
+ 8002fd9  8002fd9       96     1                 prvIdleTask
+ 8003070  8003070      17a     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.xTaskIncrementTick)
+ 8003070  8003070        0     1                 $t
+ 8003071  8003071      17a     1                 xTaskIncrementTick
+ 80031ec  80031ec        c     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.xTaskGetTickCount)
+ 80031ec  80031ec        0     1                 $t
+ 80031ed  80031ed        c     1                 xTaskGetTickCount
+ 80031f8  80031f8       36     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.vTaskPlaceOnEventList)
+ 80031f8  80031f8        0     1                 $t
+ 80031f9  80031f9       36     1                 vTaskPlaceOnEventList
+ 8003230  8003230       42     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.vTaskPlaceOnEventListRestricted)
+ 8003230  8003230        0     1                 $t
+ 8003231  8003231       42     1                 vTaskPlaceOnEventListRestricted
+ 8003274  8003274       92     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.xTaskRemoveFromEventList)
+ 8003274  8003274        0     1                 $t
+ 8003275  8003275       92     1                 xTaskRemoveFromEventList
+ 8003308  8003308       1a     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.vTaskInternalSetTimeOutState)
+ 8003308  8003308        0     1                 $t
+ 8003309  8003309       1a     1                 vTaskInternalSetTimeOutState
+ 8003324  8003324       92     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.xTaskCheckForTimeOut)
+ 8003324  8003324        0     1                 $t
+ 8003325  8003325       92     1                 xTaskCheckForTimeOut
+ 80033b8  80033b8        e     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.vTaskMissedYield)
+ 80033b8  80033b8        0     1                 $t
+ 80033b9  80033b9        e     1                 vTaskMissedYield
+ 80033c8  80033c8       26     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.xTaskGetSchedulerState)
+ 80033c8  80033c8        0     1                 $t
+ 80033c9  80033c9       26     1                 xTaskGetSchedulerState
+ 80033f0  80033f0       9a     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.text.xTaskPriorityDisinherit)
+ 80033f0  80033f0        0     1                 $t
+ 80033f1  80033f1       9a     1                 xTaskPriorityDisinherit
+ 800348c  800348c       76     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.text.xTimerCreateTimerTask)
+ 800348c  800348c        0     1                 $t
+ 800348d  800348d       76     1                 xTimerCreateTimerTask
+ 8003504  8003504       7a     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.text.prvCheckForValidListAndQueue)
+ 8003504  8003504        0     1                 $t
+ 8003505  8003505       7a     1                 prvCheckForValidListAndQueue
+ 8003580  8003580      29e     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.text.prvTimerTask)
+ 8003580  8003580        0     1                 $t
+ 8003581  8003581      29e     1                 prvTimerTask
+ 80036fe  80036fe        0     1                 $d
+ 8003708  8003708        0     1                 $t
+ 8003820  8003820       e2     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.text.prvSampleTimeNow)
+ 8003820  8003820        0     1                 $t
+ 8003821  8003821       e2     1                 prvSampleTimeNow
+ 8003904  8003904       1e     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.text.SysTick_Handler)
+ 8003904  8003904        0     1                 $t
+ 8003905  8003905       1e     1                 SysTick_Handler
+ 8003924  8003924       26     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.text.osKernelInitialize)
+ 8003924  8003924        0     1                 $t
+ 8003925  8003925       26     1                 osKernelInitialize
+ 800394c  800394c       3e     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.text.osKernelStart)
+ 800394c  800394c        0     1                 $t
+ 800394d  800394d       3e     1                 osKernelStart
+ 800398c  800398c       e0     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.text.osThreadNew)
+ 800398c  800398c        0     1                 $t
+ 800398d  800398d       e0     1                 osThreadNew
+ 8003a6c  8003a6c       2a     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.text.osDelay)
+ 8003a6c  8003a6c        0     1                 $t
+ 8003a6d  8003a6d       2a     1                 osDelay
+ 8003a98  8003a98       1a     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.text.vApplicationGetIdleTaskMemory)
+ 8003a98  8003a98        0     1                 $t
+ 8003a99  8003a99       1a     1                 vApplicationGetIdleTaskMemory
+ 8003ab4  8003ab4       1c     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.text.vApplicationGetTimerTaskMemory)
+ 8003ab4  8003ab4        0     1                 $t
+ 8003ab5  8003ab5       1c     1                 vApplicationGetTimerTaskMemory
+ 8003ad0  8003ad0      178     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.text.pvPortMalloc)
+ 8003ad0  8003ad0        0     1                 $t
+ 8003ad1  8003ad1      178     1                 pvPortMalloc
+ 8003c48  8003c48       54     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.text.prvInsertBlockIntoFreeList)
+ 8003c48  8003c48        0     1                 $t
+ 8003c49  8003c49       54     1                 prvInsertBlockIntoFreeList
+ 8003c9c  8003c9c       d6     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.text.vPortFree)
+ 8003c9c  8003c9c        0     1                 $t
+ 8003c9d  8003c9d       d6     1                 vPortFree
+ 8003d74  8003d74       26     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.pxPortInitialiseStack)
+ 8003d74  8003d74        0     1                 $t
+ 8003d75  8003d75       26     1                 pxPortInitialiseStack
+ 8003d9c  8003d9c       32     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.prvTaskExitError)
+ 8003d9c  8003d9c        0     1                 $t
+ 8003d9d  8003d9d       32     1                 prvTaskExitError
+ 8003dd0  8003dd0       24    16         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.SVC_Handler)
+ 8003dd0  8003dd0        0     1                 $t
+ 8003dd1  8003dd1       24     1                 SVC_Handler
+ 8003df0  8003df0        0     1                 pxCurrentTCBConst2
+ 8003df0  8003df0        0     1                 $d
+ 8003df4  8003df4      12e     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.xPortStartScheduler)
+ 8003df4  8003df4        0     1                 $t
+ 8003df5  8003df5      12e     1                 xPortStartScheduler
+ 8003f24  8003f24       34     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.vPortSetupTimerInterrupt)
+ 8003f24  8003f24        0     1                 $t
+ 8003f25  8003f25       34     1                 vPortSetupTimerInterrupt
+ 8003f58  8003f58       14     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.vPortEnableVFP)
+ 8003f58  8003f58        0     1                 $t
+ 8003f59  8003f59        e     1                 vPortEnableVFP
+ 8003f68  8003f68        0     1                 $d
+ 8003f6c  8003f6c       28     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.prvPortStartFirstTask)
+ 8003f6c  8003f6c        0     1                 $t
+ 8003f6d  8003f6d       22     1                 prvPortStartFirstTask
+ 8003f90  8003f90        0     1                 $d
+ 8003f94  8003f94       46     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.vPortEnterCritical)
+ 8003f94  8003f94        0     1                 $t
+ 8003f95  8003f95       46     1                 vPortEnterCritical
+ 8003fdc  8003fdc       2e     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.vPortExitCritical)
+ 8003fdc  8003fdc        0     1                 $t
+ 8003fdd  8003fdd       2e     1                 vPortExitCritical
+ 8004010  8004010       64    16         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.PendSV_Handler)
+ 8004010  8004010        0     1                 $t
+ 8004011  8004011       64     1                 PendSV_Handler
+ 8004070  8004070        0     1                 pxCurrentTCBConst
+ 8004070  8004070        0     1                 $d
+ 8004074  8004074       2e     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.text.xPortSysTickHandler)
+ 8004074  8004074        0     1                 $t
+ 8004075  8004075       2e     1                 xPortSysTickHandler
+ 80040a4  80040a4      416     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.text.main)
+ 80040a4  80040a4        0     1                 $t
+ 80040a5  80040a5      416     1                 main
+ 80044bc  80044bc       aa     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.text.SystemClock_Config)
+ 80044bc  80044bc        0     1                 $t
+ 80044bd  80044bd       aa     1                 SystemClock_Config
+ 8004568  8004568       14     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.text.HAL_TIM_PeriodElapsedCallback)
+ 8004568  8004568        0     1                 $t
+ 8004569  8004569       14     1                 HAL_TIM_PeriodElapsedCallback
+ 800457c  800457c       68     4         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.text.StartBuzzerTask)
+ 800457c  800457c        0     1                 $t
+ 800457d  800457d       68     1                 StartBuzzerTask
+ 80045e4  80045e4       46     4         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.text.StartLedTask)
+ 80045e4  80045e4        0     1                 $t
+ 80045e5  80045e5       46     1                 StartLedTask
+ 800462c  800462c       3a     4         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.text.ServoSweepTask)
+ 800462c  800462c        0     1                 $t
+ 800462d  800462d       3a     1                 ServoSweepTask
+ 8004668  8004668        c     4         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.text.StartCommTask)
+ 8004668  8004668        0     1                 $t
+ 8004669  8004669        c     1                 StartCommTask
+ 8004674  8004674       98     4         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.text.StartMotorCtrlTask)
+ 8004674  8004674        0     1                 $t
+ 8004675  8004675       98     1                 StartMotorCtrlTask
+ 80046fc  80046fc        0     1                 $d
+ 800470c  800470c        2     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.NMI_Handler)
+ 800470c  800470c        0     1                 $t
+ 800470d  800470d        2     1                 NMI_Handler
+ 8004710  8004710        2     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.HardFault_Handler)
+ 8004710  8004710        0     1                 $t
+ 8004711  8004711        2     1                 HardFault_Handler
+ 8004714  8004714        2     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.MemManage_Handler)
+ 8004714  8004714        0     1                 $t
+ 8004715  8004715        2     1                 MemManage_Handler
+ 8004718  8004718        2     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.BusFault_Handler)
+ 8004718  8004718        0     1                 $t
+ 8004719  8004719        2     1                 BusFault_Handler
+ 800471c  800471c        2     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.UsageFault_Handler)
+ 800471c  800471c        0     1                 $t
+ 800471d  800471d        2     1                 UsageFault_Handler
+ 8004720  8004720        2     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.DebugMon_Handler)
+ 8004720  8004720        0     1                 $t
+ 8004721  8004721        2     1                 DebugMon_Handler
+ 8004724  8004724        6     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.EXTI0_IRQHandler)
+ 8004724  8004724        0     1                 $t
+ 8004725  8004725        6     1                 EXTI0_IRQHandler
+ 800472c  800472c        c     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.CAN1_RX0_IRQHandler)
+ 800472c  800472c        0     1                 $t
+ 800472d  800472d        c     1                 CAN1_RX0_IRQHandler
+ 8004738  8004738        c     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.USART1_IRQHandler)
+ 8004738  8004738        0     1                 $t
+ 8004739  8004739        c     1                 USART1_IRQHandler
+ 8004744  8004744        c     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.TIM6_DAC_IRQHandler)
+ 8004744  8004744        0     1                 $t
+ 8004745  8004745        c     1                 TIM6_DAC_IRQHandler
+ 8004750  8004750       12     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.HAL_GPIO_EXTI_Callback)
+ 8004750  8004750        0     1                 $t
+ 8004751  8004751       12     1                 HAL_GPIO_EXTI_Callback
+ 8004764  8004764       4c     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.text.HAL_CAN_RxFifo0MsgPendingCallback)
+ 8004764  8004764        0     1                 $t
+ 8004765  8004765       4c     1                 HAL_CAN_RxFifo0MsgPendingCallback
+ 80047b0  80047b0       42     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.text.HAL_MspInit)
+ 80047b0  80047b0        0     1                 $t
+ 80047b1  80047b1       42     1                 HAL_MspInit
+ 80047f4  80047f4       82     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.text.HAL_CAN_MspInit)
+ 80047f4  80047f4        0     1                 $t
+ 80047f5  80047f5       82     1                 HAL_CAN_MspInit
+ 8004878  8004878       5e     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.text.HAL_TIM_PWM_MspInit)
+ 8004878  8004878        0     1                 $t
+ 8004879  8004879       5e     1                 HAL_TIM_PWM_MspInit
+ 80048d8  80048d8       34     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.text.HAL_TIM_Base_MspInit)
+ 80048d8  80048d8        0     1                 $t
+ 80048d9  80048d9       34     1                 HAL_TIM_Base_MspInit
+ 800490c  800490c       dc     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.text.HAL_TIM_MspPostInit)
+ 800490c  800490c        0     1                 $t
+ 800490d  800490d       dc     1                 HAL_TIM_MspPostInit
+ 80049e8  80049e8       c2     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.text.HAL_UART_MspInit)
+ 80049e8  80049e8        0     1                 $t
+ 80049e9  80049e9       c2     1                 HAL_UART_MspInit
+ 8004aac  8004aac       ba     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj:(.text.HAL_InitTick)
+ 8004aac  8004aac        0     1                 $t
+ 8004aad  8004aad       ba     1                 HAL_InitTick
+ 8004b68  8004b68       50     4         CMakeFiles/kaohe.dir/startup_stm32f407xx.s.obj:(.text.Reset_Handler)
+ 8004b68  8004b68        0     1                 $t
+ 8004b69  8004b69       38     1                 Reset_Handler
+ 8004b7a  8004b7a        0     1                 CopyDataInit
+ 8004b80  8004b80        0     1                 LoopCopyDataInit
+ 8004b8e  8004b8e        0     1                 FillZerobss
+ 8004b92  8004b92        0     1                 LoopFillZerobss
+ 8004ba0  8004ba0        0     1                 $d
+ 8004bb8  8004bb8        2     1         CMakeFiles/kaohe.dir/startup_stm32f407xx.s.obj:(.text.Default_Handler)
+ 8004bb8  8004bb8        0     1                 Infinite_Loop
+ 8004bb8  8004bb8        0     1                 $t
+ 8004bb8  8004bb8        2     1                 Default_Handler
+ 8004bb9  8004bb9        2     1                 WWDG_IRQHandler
+ 8004bb9  8004bb9        2     1                 PVD_IRQHandler
+ 8004bb9  8004bb9        2     1                 TAMP_STAMP_IRQHandler
+ 8004bb9  8004bb9        2     1                 RTC_WKUP_IRQHandler
+ 8004bb9  8004bb9        2     1                 FLASH_IRQHandler
+ 8004bb9  8004bb9        2     1                 RCC_IRQHandler
+ 8004bb9  8004bb9        2     1                 EXTI1_IRQHandler
+ 8004bb9  8004bb9        2     1                 EXTI2_IRQHandler
+ 8004bb9  8004bb9        2     1                 EXTI3_IRQHandler
+ 8004bb9  8004bb9        2     1                 EXTI4_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA1_Stream0_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA1_Stream1_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA1_Stream2_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA1_Stream3_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA1_Stream4_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA1_Stream5_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA1_Stream6_IRQHandler
+ 8004bb9  8004bb9        2     1                 ADC_IRQHandler
+ 8004bb9  8004bb9        2     1                 CAN1_TX_IRQHandler
+ 8004bb9  8004bb9        2     1                 CAN1_RX1_IRQHandler
+ 8004bb9  8004bb9        2     1                 CAN1_SCE_IRQHandler
+ 8004bb9  8004bb9        2     1                 EXTI9_5_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM1_BRK_TIM9_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM1_UP_TIM10_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM1_TRG_COM_TIM11_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM1_CC_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM2_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM3_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM4_IRQHandler
+ 8004bb9  8004bb9        2     1                 I2C1_EV_IRQHandler
+ 8004bb9  8004bb9        2     1                 I2C1_ER_IRQHandler
+ 8004bb9  8004bb9        2     1                 I2C2_EV_IRQHandler
+ 8004bb9  8004bb9        2     1                 I2C2_ER_IRQHandler
+ 8004bb9  8004bb9        2     1                 SPI1_IRQHandler
+ 8004bb9  8004bb9        2     1                 SPI2_IRQHandler
+ 8004bb9  8004bb9        2     1                 USART2_IRQHandler
+ 8004bb9  8004bb9        2     1                 USART3_IRQHandler
+ 8004bb9  8004bb9        2     1                 EXTI15_10_IRQHandler
+ 8004bb9  8004bb9        2     1                 RTC_Alarm_IRQHandler
+ 8004bb9  8004bb9        2     1                 OTG_FS_WKUP_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM8_BRK_TIM12_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM8_UP_TIM13_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM8_TRG_COM_TIM14_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM8_CC_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA1_Stream7_IRQHandler
+ 8004bb9  8004bb9        2     1                 FSMC_IRQHandler
+ 8004bb9  8004bb9        2     1                 SDIO_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM5_IRQHandler
+ 8004bb9  8004bb9        2     1                 SPI3_IRQHandler
+ 8004bb9  8004bb9        2     1                 UART4_IRQHandler
+ 8004bb9  8004bb9        2     1                 UART5_IRQHandler
+ 8004bb9  8004bb9        2     1                 TIM7_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA2_Stream0_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA2_Stream1_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA2_Stream2_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA2_Stream3_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA2_Stream4_IRQHandler
+ 8004bb9  8004bb9        2     1                 ETH_IRQHandler
+ 8004bb9  8004bb9        2     1                 ETH_WKUP_IRQHandler
+ 8004bb9  8004bb9        2     1                 CAN2_TX_IRQHandler
+ 8004bb9  8004bb9        2     1                 CAN2_RX0_IRQHandler
+ 8004bb9  8004bb9        2     1                 CAN2_RX1_IRQHandler
+ 8004bb9  8004bb9        2     1                 CAN2_SCE_IRQHandler
+ 8004bb9  8004bb9        2     1                 OTG_FS_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA2_Stream5_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA2_Stream6_IRQHandler
+ 8004bb9  8004bb9        2     1                 DMA2_Stream7_IRQHandler
+ 8004bb9  8004bb9        2     1                 USART6_IRQHandler
+ 8004bb9  8004bb9        2     1                 I2C3_EV_IRQHandler
+ 8004bb9  8004bb9        2     1                 I2C3_ER_IRQHandler
+ 8004bb9  8004bb9        2     1                 OTG_HS_EP1_OUT_IRQHandler
+ 8004bb9  8004bb9        2     1                 OTG_HS_EP1_IN_IRQHandler
+ 8004bb9  8004bb9        2     1                 OTG_HS_WKUP_IRQHandler
+ 8004bb9  8004bb9        2     1                 OTG_HS_IRQHandler
+ 8004bb9  8004bb9        2     1                 DCMI_IRQHandler
+ 8004bb9  8004bb9        2     1                 HASH_RNG_IRQHandler
+ 8004bb9  8004bb9        2     1                 FPU_IRQHandler
+ 8004bbc  8004bbc       1a     4         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.text.Buzzer_Init)
+ 8004bbc  8004bbc        0     1                 $t
+ 8004bbd  8004bbd       1a     1                 Buzzer_Init
+ 8004bd8  8004bd8       76     4         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.text.Buzzer_PlayBootBeep)
+ 8004bd8  8004bd8        0     1                 $t
+ 8004bd9  8004bd9       76     1                 Buzzer_PlayBootBeep
+ 8004c50  8004c50       ee     4         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.text.Buzzer_PlayErrorTone)
+ 8004c50  8004c50        0     1                 $t
+ 8004c51  8004c51       ee     1                 Buzzer_PlayErrorTone
+ 8004d40  8004d40       26     4         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.text.Led_Init)
+ 8004d40  8004d40        0     1                 $t
+ 8004d41  8004d41       26     1                 Led_Init
+ 8004d68  8004d68       12     4         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.text.Led_SetColor)
+ 8004d68  8004d68        0     1                 $t
+ 8004d69  8004d69       12     1                 Led_SetColor
+ 8004d7c  8004d7c       14     4         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.text.Led_AllOff)
+ 8004d7c  8004d7c        0     1                 $t
+ 8004d7d  8004d7d       14     1                 Led_AllOff
+ 8004d90  8004d90        e     4         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.text.Servo_Init)
+ 8004d90  8004d90        0     1                 $t
+ 8004d91  8004d91        e     1                 Servo_Init
+ 8004da0  8004da0       44     4         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.text.Servo_SetAngle)
+ 8004da0  8004da0        0     1                 $t
+ 8004da1  8004da1       44     1                 Servo_SetAngle
+ 8004ddc  8004ddc        0     1                 $d
+ 8004de4  8004de4       16     4         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.text.Comm_Init)
+ 8004de4  8004de4        0     1                 $t
+ 8004de5  8004de5       16     1                 Comm_Init
+ 8004dfc  8004dfc       40     4         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.text.JustFloat_Send)
+ 8004dfc  8004dfc        0     1                 $t
+ 8004dfd  8004dfd       40     1                 JustFloat_Send
+ 8004e3c  8004e3c      13c     4         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.text.HAL_UART_RxCpltCallback)
+ 8004e3c  8004e3c        0     1                 $t
+ 8004e3d  8004e3d      13c     1                 HAL_UART_RxCpltCallback
+ 8004f70  8004f70        0     1                 $d
+ 8004f78  8004f78       5c     4         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.text.HAL_UART_ErrorCallback)
+ 8004f78  8004f78        0     1                 $t
+ 8004f79  8004f79       5c     1                 HAL_UART_ErrorCallback
+ 8004fd4  8004fd4       8e     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.text.Motor_Init)
+ 8004fd4  8004fd4        0     1                 $t
+ 8004fd5  8004fd5       8e     1                 Motor_Init
+ 8005064  8005064       ac     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.text.Motor_Update)
+ 8005064  8005064        0     1                 $t
+ 8005065  8005065       ac     1                 Motor_Update
+ 8005108  8005108        0     1                 $d
+ 8005110  8005110      22c     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.text.Motor_ControlLoop)
+ 8005110  8005110        0     1                 $t
+ 8005111  8005111      22c     1                 Motor_ControlLoop
+ 8005334  8005334        0     1                 $d
+ 800533c  800533c      1be     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libclang_rt.builtins.a(udivmoddi4.c.obj):(.text.__udivmoddi4)
+ 800533c  800533c        0     1                 $t
+ 800533d  800533d      1be     1                 __udivmoddi4
+ 80054fa  80054fa        a     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(aeabi_memset.c.o):(.text.__aeabi_memset)
+ 80054fa  80054fa        0     1                 $t
+ 80054fb  80054fb        a     1                 __aeabi_memset
+ 80054fb  80054fb        a     1                 __aeabi_memset4
+ 80054fb  80054fb        a     1                 __aeabi_memset8
+ 8005504  8005504        8     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(bzero.c.o):(.text.bzero)
+ 8005504  8005504        0     1                 $t
+ 8005505  8005505        8     1                 bzero
+ 8005505  8005505        8     1                 __aeabi_memclr4
+ 8005505  8005505        8     1                 __aeabi_memclr8
+ 8005505  8005505        8     1                 __aeabi_memclr
+ 800550c  800550c       12     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(memcpy.c.o):(.text.memcpy)
+ 800550c  800550c        0     1                 $t
+ 800550d  800550d       12     1                 memcpy
+ 800550d  800550d       12     1                 __aeabi_memcpy4
+ 800550d  800550d       12     1                 __aeabi_memcpy8
+ 800550d  800550d       12     1                 __aeabi_memcpy
+ 800551e  800551e        e     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(memset.c.o):(.text.memset)
+ 800551e  800551e        0     1                 $t
+ 800551f  800551f        e     1                 memset
+ 800552c  800552c       30     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_misc_init.c.o):(.text.__libc_init_array)
+ 800552c  800552c        0     1                 $t
+ 800552d  800552d       30     1                 __libc_init_array
+ 800554c  800554c        0     1                 $d
+ 800555c  800555c       10     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.text._initial_set_tls)
+ 800555c  800555c        0     1                 $t
+ 800555d  800555d        6     1                 _initial_set_tls
+ 8005564  8005564        0     1                 $d
+ 800556c  800556c       14     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_set_tls.c.o):(.text._set_tls)
+ 800556c  800556c        0     1                 $t
+ 800556d  800556d       14     1                 _set_tls
+ 8005578  8005578        0     1                 $d
+ 8005580  8005580        0     1         . = ALIGN(4)
+ 8005580  8005580        0     1         _etext = .
+ 8005580  8005580      174     4 .rodata
+ 8005580  8005580        0     1         . = ALIGN(4)
+ 8005580  8005580       10     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.rodata.AHBPrescTable)
+ 8005580  8005580       10     1                 AHBPrescTable
+ 8005590  8005590        8     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.rodata.APBPrescTable)
+ 8005590  8005590        8     1                 APBPrescTable
+ 8005598  8005598       43     1         <internal>:(.rodata.str1.1)
+ 80055dc  80055dc       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.LedTask_attributes)
+ 80055dc  80055dc       24     1                 LedTask_attributes
+ 8005600  8005600       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.ServoSweep_attributes)
+ 8005600  8005600       24     1                 ServoSweep_attributes
+ 8005624  8005624       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.CommTask_attributes)
+ 8005624  8005624       24     1                 CommTask_attributes
+ 8005648  8005648       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.MotorCtrl_attributes)
+ 8005648  8005648       24     1                 MotorCtrl_attributes
+ 800566c  800566c       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.BuzzerTask_attributes)
+ 800566c  800566c       24     1                 BuzzerTask_attributes
+ 8005690  8005690       20     4         <internal>:(.rodata.cst16)
+ 80056b0  80056b0       20     4         <internal>:(.rodata.cst32)
+ 80056d0  80056d0       18     4         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.rodata..L__const.Play_Error2.m)
+ 80056d0  80056d0       18     1                 .L__const.Play_Error2.m
+ 80056e8  80056e8        c     2         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.rodata..L__const.Play_Error2.d)
+ 80056e8  80056e8        c     1                 .L__const.Play_Error2.d
+ 80056f4  80056f4        0     1         . = ALIGN(4)
+ 80056f4  80056f4        0     1 .ARM.extab
+ 80056f4  80056f4        0     1         . = ALIGN(4)
+ 80056f4  80056f4        0     1         . = ALIGN(4)
+ 80056f4  80056f4       10     4 .ARM
+ 80056f4  80056f4        0     1         . = ALIGN(4)
+ 80056f4  80056f4        0     1         __exidx_start = .
+ 80056f4  80056f4       10     4         <internal>:(.ARM.exidx)
+ 8005704  8005704        0     1         __exidx_end = .
+ 8005704  8005704        0     1         . = ALIGN(4)
+ 8005704  8005704        4     4 .preinit_array
+ 8005704  8005704        0     1         . = ALIGN(4)
+ 8005704  8005704        0     1         PROVIDE_HIDDEN (__preinit_array_start = .)
+ 8005704  8005704        4     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.preinit_array)
+ 8005708  8005708        0     1         PROVIDE_HIDDEN (__preinit_array_end = .)
+ 8005708  8005708        0     1         . = ALIGN(4)
+ 8005708  8005708        0     1 .init_array
+ 8005708  8005708        0     1         . = ALIGN(4)
+ 8005708  8005708        0     1         PROVIDE_HIDDEN (__init_array_start = .)
+ 8005708  8005708        0     1         PROVIDE_HIDDEN (__init_array_end = .)
+ 8005708  8005708        0     1         . = ALIGN(4)
+ 8005708  8005708        0     1 .fini_array
+ 8005708  8005708        0     1         . = ALIGN(4)
+ 8005708  8005708        0     1         . = ALIGN(4)
+ 8005708  8005708        0     1 _siccmram = LOADADDR(.ccmram)
+10000000 10000000        0     1 .ccmram
+10000000 10000000        0     1         . = ALIGN(4)
+10000000 10000000        0     1         _sccmram = .
+10000000 10000000        0     1         . = ALIGN(4)
+10000000 10000000        0     1         _eccmram = .
+10000000 10000000        0     1 _sidata = LOADADDR(.data)
+20000000  8005708       10     4 .data
+20000000  8005708        0     1         . = ALIGN(4)
+20000000  8005708        0     1         _sdata = .
+20000000  8005708        4     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.data.SystemCoreClock)
+20000000  8005708        4     1                 SystemCoreClock
+20000004  800570c        4     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.data.uwTickPrio)
+20000004  800570c        4     1                 uwTickPrio
+20000008  8005710        1     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.data.uwTickFreq)
+20000008  8005710        1     1                 uwTickFreq
+2000000c  8005714        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.data.uxCriticalNesting)
+2000000c  8005714        4     1                 uxCriticalNesting
+20000010  8005718        0     1         . = ALIGN(4)
+20000010  8005718        0     4 .tdata
+20000010  8005718        0     1         . = ALIGN(4)
+20000010  8005718        0     1         _edata = .
+20000010  8005718        0     1 PROVIDE( __tdata_start = ADDR(.tdata) )
+20000010 20000010        0     4 .tbss
+20000010 20000010        0     1         _sbss = .
+20000010 20000010        0     1         __bss_start__ = _sbss
+20000010 20000010        0     1         . = ALIGN(4)
+20000010 20000010        0     1 PROVIDE( __tls_base = __tdata_start )
+20000010 20000010        0     1 PROVIDE( __tls_align = MAX(ALIGNOF(.tdata), ALIGNOF(.tbss)) )
+20000010 20000010        0     1 PROVIDE( __arm32_tls_tcb_offset = MAX(8, __tls_align) )
+20000010 20000010     4bf0     4 .bss
+20000010 20000010        4     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.bss.uwTick)
+20000010 20000010        4     1                 uwTick
+20000014 20000014       40     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.bss.xQueueRegistry)
+20000014 20000014       40     1                 xQueueRegistry
+20000054 20000054        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.pxCurrentTCB)
+20000054 20000054        4     1                 pxCurrentTCB
+20000058 20000058        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.uxTaskNumber)
+20000058 20000058        4     1                 uxTaskNumber
+2000005c 2000005c       14     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xTasksWaitingTermination)
+2000005c 2000005c       14     1                 xTasksWaitingTermination
+20000070 20000070        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.uxDeletedTasksWaitingCleanUp)
+20000070 20000070        4     1                 uxDeletedTasksWaitingCleanUp
+20000074 20000074        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.uxCurrentNumberOfTasks)
+20000074 20000074        4     1                 uxCurrentNumberOfTasks
+20000078 20000078        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xSchedulerRunning)
+20000078 20000078        4     1                 xSchedulerRunning
+2000007c 2000007c        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.uxSchedulerSuspended)
+2000007c 2000007c        4     1                 uxSchedulerSuspended
+20000080 20000080        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xTickCount)
+20000080 20000080        4     1                 xTickCount
+20000084 20000084        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.pxDelayedTaskList)
+20000084 20000084        4     1                 pxDelayedTaskList
+20000088 20000088        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.pxOverflowDelayedTaskList)
+20000088 20000088        4     1                 pxOverflowDelayedTaskList
+2000008c 2000008c       14     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xSuspendedTaskList)
+2000008c 2000008c       14     1                 xSuspendedTaskList
+200000a0 200000a0      460     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.pxReadyTasksLists)
+200000a0 200000a0      460     1                 pxReadyTasksLists
+20000500 20000500        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.uxTopReadyPriority)
+20000500 20000500        4     1                 uxTopReadyPriority
+20000504 20000504       14     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xPendingReadyList)
+20000504 20000504       14     1                 xPendingReadyList
+20000518 20000518        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xIdleTaskHandle)
+20000518 20000518        4     1                 xIdleTaskHandle
+2000051c 2000051c        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xNextTaskUnblockTime)
+2000051c 2000051c        4     1                 xNextTaskUnblockTime
+20000520 20000520        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xYieldPending)
+20000520 20000520        4     1                 xYieldPending
+20000524 20000524        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xPendedTicks)
+20000524 20000524        4     1                 xPendedTicks
+20000528 20000528        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xNumOfOverflows)
+20000528 20000528        4     1                 xNumOfOverflows
+2000052c 2000052c       14     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xDelayedTaskList1)
+2000052c 2000052c       14     1                 xDelayedTaskList1
+20000540 20000540       14     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.bss.xDelayedTaskList2)
+20000540 20000540       14     1                 xDelayedTaskList2
+20000554 20000554        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.bss.xTimerQueue)
+20000554 20000554        4     1                 xTimerQueue
+20000558 20000558        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.bss.xTimerTaskHandle)
+20000558 20000558        4     1                 xTimerTaskHandle
+2000055c 2000055c        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.bss.pxCurrentTimerList)
+2000055c 2000055c        4     1                 pxCurrentTimerList
+20000560 20000560        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.bss.pxOverflowTimerList)
+20000560 20000560        4     1                 pxOverflowTimerList
+20000564 20000564        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.bss.prvSampleTimeNow.xLastTime)
+20000564 20000564        4     1                 prvSampleTimeNow.xLastTime
+20000568 20000568       14     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.bss.xActiveTimerList1)
+20000568 20000568       14     1                 xActiveTimerList1
+2000057c 2000057c       14     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.bss.xActiveTimerList2)
+2000057c 2000057c       14     1                 xActiveTimerList2
+20000590 20000590       50     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.bss.prvCheckForValidListAndQueue.xStaticTimerQueue)
+20000590 20000590       50     1                 prvCheckForValidListAndQueue.xStaticTimerQueue
+200005e0 200005e0       a0     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.bss.prvCheckForValidListAndQueue.ucStaticTimerQueueStorage)
+200005e0 200005e0       a0     1                 prvCheckForValidListAndQueue.ucStaticTimerQueueStorage
+20000680 20000680        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.bss.KernelState)
+20000680 20000680        4     1                 KernelState
+20000684 20000684       5c     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.bss.vApplicationGetIdleTaskMemory.Idle_TCB)
+20000684 20000684       5c     1                 vApplicationGetIdleTaskMemory.Idle_TCB
+200006e0 200006e0      200     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.bss.vApplicationGetIdleTaskMemory.Idle_Stack)
+200006e0 200006e0      200     1                 vApplicationGetIdleTaskMemory.Idle_Stack
+200008e0 200008e0       5c     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.bss.vApplicationGetTimerTaskMemory.Timer_TCB)
+200008e0 200008e0       5c     1                 vApplicationGetTimerTaskMemory.Timer_TCB
+2000093c 2000093c      400     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.bss.vApplicationGetTimerTaskMemory.Timer_Stack)
+2000093c 2000093c      400     1                 vApplicationGetTimerTaskMemory.Timer_Stack
+20000d3c 20000d3c        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.bss.pxEnd)
+20000d3c 20000d3c        4     1                 pxEnd
+20000d40 20000d40        1     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.bss.xBlockAllocatedBit)
+20000d40 20000d40        1     1                 xBlockAllocatedBit
+20000d44 20000d44        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.bss.xFreeBytesRemaining)
+20000d44 20000d44        4     1                 xFreeBytesRemaining
+20000d48 20000d48        8     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.bss.xStart)
+20000d48 20000d48        8     1                 xStart
+20000d50 20000d50        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.bss.xMinimumEverFreeBytesRemaining)
+20000d50 20000d50        4     1                 xMinimumEverFreeBytesRemaining
+20000d54 20000d54        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.bss.xNumberOfSuccessfulAllocations)
+20000d54 20000d54        4     1                 xNumberOfSuccessfulAllocations
+20000d58 20000d58        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.bss.xNumberOfSuccessfulFrees)
+20000d58 20000d58        4     1                 xNumberOfSuccessfulFrees
+20000d5c 20000d5c     3c00     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.bss.ucHeap)
+20000d5c 20000d5c     3c00     1                 ucHeap
+2000495c 2000495c        1     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.bss.ucMaxSysCallPriority)
+2000495c 2000495c        1     1                 ucMaxSysCallPriority
+20004960 20004960        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.bss.ulMaxPRIGROUPValue)
+20004960 20004960        4     1                 ulMaxPRIGROUPValue
+20004964 20004964        4     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.bss.LedTaskHandle)
+20004964 20004964        4     1                 LedTaskHandle
+20004968 20004968        4     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.bss.ServoSweepHandle)
+20004968 20004968        4     1                 ServoSweepHandle
+2000496c 2000496c        4     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.bss.CommTaskHandle)
+2000496c 2000496c        4     1                 CommTaskHandle
+20004970 20004970        4     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.bss.MotorCtrlHandle)
+20004970 20004970        4     1                 MotorCtrlHandle
+20004974 20004974        4     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.bss.BuzzerTaskHandle)
+20004974 20004974        4     1                 BuzzerTaskHandle
+20004978 20004978       28     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.bss.hcan1)
+20004978 20004978       28     1                 hcan1
+200049a0 200049a0       48     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.bss.htim1)
+200049a0 200049a0       48     1                 htim1
+200049e8 200049e8       48     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.bss.htim4)
+200049e8 200049e8       48     1                 htim4
+20004a30 20004a30       48     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.bss.htim5)
+20004a30 20004a30       48     1                 htim5
+20004a78 20004a78       48     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.bss.huart1)
+20004a78 20004a78       48     1                 huart1
+20004ac0 20004ac0        1     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.bss.Key_Pressed)
+20004ac0 20004ac0        1     1                 Key_Pressed
+20004ac4 20004ac4       48     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj:(.bss.htim6)
+20004ac4 20004ac4       48     1                 htim6
+20004b0c 20004b0c        1     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.bss.rx_byte)
+20004b0c 20004b0c        1     1                 rx_byte
+20004b0d 20004b0d       40     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.bss.rx_buffer)
+20004b0d 20004b0d       40     1                 rx_buffer
+20004b4e 20004b4e        2     2         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.bss.rx_index)
+20004b4e 20004b4e        2     1                 rx_index
+20004b50 20004b50       2c     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.bss.pid_angle)
+20004b50 20004b50       2c     1                 pid_angle
+20004b7c 20004b7c       2c     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.bss.pid_speed)
+20004b7c 20004b7c       2c     1                 pid_speed
+20004ba8 20004ba8       50     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.bss.motor)
+20004ba8 20004ba8       50     1                 motor
+20004bf8 20004bf8        1     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.bss.Motor_ControlLoop.print_cnt)
+20004bf8 20004bf8        1     1                 Motor_ControlLoop.print_cnt
+20004bfc 20004bfc        4     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_tls.c.o):(.bss.__tls)
+20004bfc 20004bfc        4     1                 __tls
+20004c00 20004c00        0     1         . = ALIGN(4)
+20004c00 20004c00        0     1         _ebss = .
+20004c00 20004c00        0     1         __bss_end__ = _ebss
+20004c00 20004c00      600     1 ._user_heap_stack
+20004c00 20004c00        0     1         . = ALIGN(8)
+20004c00 20004c00        0     1         PROVIDE ( _end = . )
+20004c00 20004c00      200     1         . = . + _Min_Heap_Size
+20004e00 20004e00      400     1         . = . + _Min_Stack_Size
+20005200 20005200        0     1         . = ALIGN(8)
+       0        0     c087     1 .debug_loclists
+       0        0       6b     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_loclists)
+      6b       6b     255f     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_loclists)
+    25ca     25ca      aff     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_loclists)
+    30c9     30c9      584     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.debug_loclists)
+    364d     364d      1ae     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.debug_loclists)
+    37fb     37fb      160     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj:(.debug_loclists)
+    395b     395b      13a     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj:(.debug_loclists)
+    3a95     3a95      1f3     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj:(.debug_loclists)
+    3c88     3c88      193     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.debug_loclists)
+    3e1b     3e1b      106     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj:(.debug_loclists)
+    3f21     3f21      4a5     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:(.debug_loclists)
+    43c6     43c6       53     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj:(.debug_loclists)
+    4419     4419      18e     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.debug_loclists)
+    45a7     45a7       85     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.debug_loclists)
+    462c     462c      1cc     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj:(.debug_loclists)
+    47f8     47f8      e36     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.debug_loclists)
+    562e     562e      64b     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj:(.debug_loclists)
+    5c79     5c79       55     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.debug_loclists)
+    5cce     5cce      d99     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.debug_loclists)
+    6a67     6a67      d4e     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj:(.debug_loclists)
+    77b5     77b5     1819     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.debug_loclists)
+    8fce     8fce      a58     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.debug_loclists)
+    9a26     9a26     17dc     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.debug_loclists)
+    b202     b202      23e     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.debug_loclists)
+    b440     b440       a5     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.debug_loclists)
+    b4e5     b4e5      299     1         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.debug_loclists)
+    b77e     b77e       bb     1         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.debug_loclists)
+    b839     b839       1d     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.debug_loclists)
+    b856     b856      15f     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.debug_loclists)
+    b9b5     b9b5       72     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj:(.debug_loclists)
+    ba27     ba27       25     1         CMakeFiles/kaohe.dir/Core/Src/sysmem.c.obj:(.debug_loclists)
+    ba4c     ba4c      25b     1         CMakeFiles/kaohe.dir/Core/Src/syscalls.c.obj:(.debug_loclists)
+    bca7     bca7       ee     1         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.debug_loclists)
+    bd95     bd95       18     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_loclists)
+    bdad     bdad      12c     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_loclists)
+    bed9     bed9      1ae     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_loclists)
+       0        0     48dd     1 .debug_abbrev
+       0        0       da     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_abbrev)
+      da       da      2f7     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_abbrev)
+     3d1      3d1      204     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_abbrev)
+     5d5      5d5      1d3     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.debug_abbrev)
+     7a8      7a8      1d8     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.debug_abbrev)
+     980      980      110     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj:(.debug_abbrev)
+     a90      a90      1e4     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj:(.debug_abbrev)
+     c74      c74      24d     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj:(.debug_abbrev)
+     ec1      ec1      17b     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.debug_abbrev)
+    103c     103c      137     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj:(.debug_abbrev)
+    1173     1173      219     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:(.debug_abbrev)
+    138c     138c      133     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj:(.debug_abbrev)
+    14bf     14bf      11a     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj:(.debug_abbrev)
+    15d9     15d9      2d3     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.debug_abbrev)
+    18ac     18ac      192     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.debug_abbrev)
+    1a3e     1a3e      172     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj:(.debug_abbrev)
+    1bb0     1bb0      232     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.debug_abbrev)
+    1de2     1de2      294     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj:(.debug_abbrev)
+    2076     2076       c8     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.debug_abbrev)
+    213e     213e      2cc     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.debug_abbrev)
+    240a     240a      2ec     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj:(.debug_abbrev)
+    26f6     26f6      3b3     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.debug_abbrev)
+    2aa9     2aa9      2f5     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.debug_abbrev)
+    2d9e     2d9e      469     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.debug_abbrev)
+    3207     3207      204     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.debug_abbrev)
+    340b     340b      1cb     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.debug_abbrev)
+    35d6     35d6      2cc     1         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.debug_abbrev)
+    38a2     38a2      103     1         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.debug_abbrev)
+    39a5     39a5      19e     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.debug_abbrev)
+    3b43     3b43      209     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.debug_abbrev)
+    3d4c     3d4c      162     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj:(.debug_abbrev)
+    3eae     3eae       99     1         CMakeFiles/kaohe.dir/Core/Src/sysmem.c.obj:(.debug_abbrev)
+    3f47     3f47      1c6     1         CMakeFiles/kaohe.dir/Core/Src/syscalls.c.obj:(.debug_abbrev)
+    410d     410d       1f     1         CMakeFiles/kaohe.dir/startup_stm32f407xx.s.obj:(.debug_abbrev)
+    412c     412c      1b3     1         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.debug_abbrev)
+    42df     42df      167     1         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.debug_abbrev)
+    4446     4446      137     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_abbrev)
+    457d     457d      1c7     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_abbrev)
+    4744     4744      199     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_abbrev)
+       0        0    18672     1 .debug_info
+       0        0      357     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_info)
+     357      357     296d     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_info)
+    2cc4     2cc4      fc9     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_info)
+    3c8d     3c8d      a74     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.debug_info)
+    4701     4701      61f     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.debug_info)
+    4d20     4d20      36d     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj:(.debug_info)
+    508d     508d      480     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj:(.debug_info)
+    550d     550d      4ef     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj:(.debug_info)
+    59fc     59fc      4ed     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.debug_info)
+    5ee9     5ee9      3a5     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj:(.debug_info)
+    628e     628e      64b     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:(.debug_info)
+    68d9     68d9      4c3     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj:(.debug_info)
+    6d9c     6d9c      29e     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj:(.debug_info)
+    703a     703a      a2a     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.debug_info)
+    7a64     7a64      5c8     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.debug_info)
+    802c     802c      366     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj:(.debug_info)
+    8392     8392     23df     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.debug_info)
+    a771     a771      868     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj:(.debug_info)
+    afd9     afd9      1b3     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.debug_info)
+    b18c     b18c     13bb     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.debug_info)
+    c547     c547      f94     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj:(.debug_info)
+    d4db     d4db     1dd7     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.debug_info)
+    f2b2     f2b2      f4e     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.debug_info)
+   10200    10200     2606     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.debug_info)
+   12806    12806      36f     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.debug_info)
+   12b75    12b75      32b     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.debug_info)
+   12ea0    12ea0     1636     1         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.debug_info)
+   144d6    144d6      219     1         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.debug_info)
+   146ef    146ef      a16     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.debug_info)
+   15105    15105      e56     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.debug_info)
+   15f5b    15f5b      77f     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj:(.debug_info)
+   166da    166da       ae     1         CMakeFiles/kaohe.dir/Core/Src/sysmem.c.obj:(.debug_info)
+   16788    16788      573     1         CMakeFiles/kaohe.dir/Core/Src/syscalls.c.obj:(.debug_info)
+   16cfb    16cfb      16d     1         CMakeFiles/kaohe.dir/startup_stm32f407xx.s.obj:(.debug_info)
+   16e68    16e68      364     1         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.debug_info)
+   171cc    171cc      4f0     1         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.debug_info)
+   176bc    176bc      4b8     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_info)
+   17b74    17b74      5a1     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_info)
+   18115    18115      55d     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_info)
+       0        0     146c     1 .debug_rnglists
+       0        0       18     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_rnglists)
+      18       18      374     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_rnglists)
+     38c      38c       be     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_rnglists)
+     44a      44a       8f     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.debug_rnglists)
+     4d9      4d9       67     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.debug_rnglists)
+     540      540       25     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj:(.debug_rnglists)
+     565      565       39     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj:(.debug_rnglists)
+     59e      59e       37     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj:(.debug_rnglists)
+     5d5      5d5       2b     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.debug_rnglists)
+     600      600       1c     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj:(.debug_rnglists)
+     61c      61c       8b     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:(.debug_rnglists)
+     6a7      6a7       45     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj:(.debug_rnglists)
+     6ec      6ec       23     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj:(.debug_rnglists)
+     70f      70f       87     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.debug_rnglists)
+     796      796       62     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.debug_rnglists)
+     7f8      7f8       2f     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj:(.debug_rnglists)
+     827      827      10e     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.debug_rnglists)
+     935      935       4b     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj:(.debug_rnglists)
+     980      980       20     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.debug_rnglists)
+     9a0      9a0      16c     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.debug_rnglists)
+     b0c      b0c       85     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj:(.debug_rnglists)
+     b91      b91      3b0     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.debug_rnglists)
+     f41      f41      11a     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.debug_rnglists)
+    105b     105b      12a     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.debug_rnglists)
+    1185     1185       29     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.debug_rnglists)
+    11ae     11ae       49     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.debug_rnglists)
+    11f7     11f7       1f     1         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.debug_rnglists)
+    1216     1216       21     1         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.debug_rnglists)
+    1237     1237       35     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.debug_rnglists)
+    126c     126c       5c     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.debug_rnglists)
+    12c8     12c8       1b     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj:(.debug_rnglists)
+    12e3     12e3       4d     1         CMakeFiles/kaohe.dir/Core/Src/syscalls.c.obj:(.debug_rnglists)
+    1330     1330       19     1         CMakeFiles/kaohe.dir/startup_stm32f407xx.s.obj:(.debug_rnglists)
+    1349     1349       3f     1         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.debug_rnglists)
+    1388     1388       1a     1         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.debug_rnglists)
+    13a2     13a2       17     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_rnglists)
+    13b9     13b9       65     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_rnglists)
+    141e     141e       4e     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_rnglists)
+       0        0     5d7c     1 .debug_str_offsets
+       0        0      128     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_str_offsets)
+     128      128      534     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_str_offsets)
+     65c      65c      350     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_str_offsets)
+     9ac      9ac      2a4     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.debug_str_offsets)
+     c50      c50      218     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.debug_str_offsets)
+     e68      e68      134     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj:(.debug_str_offsets)
+     f9c      f9c      12c     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj:(.debug_str_offsets)
+    10c8     10c8      138     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj:(.debug_str_offsets)
+    1200     1200      1a4     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.debug_str_offsets)
+    13a4     13a4      140     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj:(.debug_str_offsets)
+    14e4     14e4      1c4     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:(.debug_str_offsets)
+    16a8     16a8      198     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj:(.debug_str_offsets)
+    1840     1840       f0     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj:(.debug_str_offsets)
+    1930     1930      388     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.debug_str_offsets)
+    1cb8     1cb8      310     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.debug_str_offsets)
+    1fc8     1fc8       e0     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj:(.debug_str_offsets)
+    20a8     20a8      348     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.debug_str_offsets)
+    23f0     23f0      1b4     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj:(.debug_str_offsets)
+    25a4     25a4       90     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.debug_str_offsets)
+    2634     2634      2c8     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.debug_str_offsets)
+    28fc     28fc      1cc     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj:(.debug_str_offsets)
+    2ac8     2ac8      474     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.debug_str_offsets)
+    2f3c     2f3c      2c0     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.debug_str_offsets)
+    31fc     31fc      8cc     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.debug_str_offsets)
+    3ac8     3ac8      104     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.debug_str_offsets)
+    3bcc     3bcc       c0     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.debug_str_offsets)
+    3c8c     3c8c      80c     1         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.debug_str_offsets)
+    4498     4498       f8     1         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.debug_str_offsets)
+    4590     4590      3c8     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.debug_str_offsets)
+    4958     4958      598     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.debug_str_offsets)
+    4ef0     4ef0      3f4     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj:(.debug_str_offsets)
+    52e4     52e4       4c     1         CMakeFiles/kaohe.dir/Core/Src/sysmem.c.obj:(.debug_str_offsets)
+    5330     5330      1d0     1         CMakeFiles/kaohe.dir/Core/Src/syscalls.c.obj:(.debug_str_offsets)
+    5500     5500      10c     1         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.debug_str_offsets)
+    560c     560c      1f4     1         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.debug_str_offsets)
+    5800     5800      1f4     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_str_offsets)
+    59f4     59f4      20c     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_str_offsets)
+    5c00     5c00      17c     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_str_offsets)
+       0        0     99d9     1 .debug_str
+       0        0     99d9     1         <internal>:(.debug_str)
+       0        0     1acc     1 .debug_addr
+       0        0       1c     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_addr)
+      1c       1c      298     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_addr)
+     2b4      2b4       ec     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_addr)
+     3a0      3a0       a4     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.debug_addr)
+     444      444       48     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.debug_addr)
+     48c      48c       24     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj:(.debug_addr)
+     4b0      4b0       70     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj:(.debug_addr)
+     520      520       54     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj:(.debug_addr)
+     574      574       30     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.debug_addr)
+     5a4      5a4       1c     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj:(.debug_addr)
+     5c0      5c0       40     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:(.debug_addr)
+     600      600       4c     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj:(.debug_addr)
+     64c      64c       28     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj:(.debug_addr)
+     674      674       90     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.debug_addr)
+     704      704       80     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.debug_addr)
+     784      784       30     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj:(.debug_addr)
+     7b4      7b4      4bc     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.debug_addr)
+     c70      c70       a4     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj:(.debug_addr)
+     d14      d14       1c     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.debug_addr)
+     d30      d30      1b8     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.debug_addr)
+     ee8      ee8      160     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj:(.debug_addr)
+    1048     1048      2b8     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.debug_addr)
+    1300     1300      104     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.debug_addr)
+    1404     1404      28c     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.debug_addr)
+    1690     1690       64     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.debug_addr)
+    16f4     16f4       80     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.debug_addr)
+    1774     1774       f8     1         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.debug_addr)
+    186c     186c       24     1         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.debug_addr)
+    1890     1890       4c     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.debug_addr)
+    18dc     18dc       64     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.debug_addr)
+    1940     1940       1c     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj:(.debug_addr)
+    195c     195c       10     1         CMakeFiles/kaohe.dir/Core/Src/sysmem.c.obj:(.debug_addr)
+    196c     196c       68     1         CMakeFiles/kaohe.dir/Core/Src/syscalls.c.obj:(.debug_addr)
+    19d4     19d4       50     1         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.debug_addr)
+    1a24     1a24       18     1         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.debug_addr)
+    1a3c     1a3c       14     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_addr)
+    1a50     1a50       38     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_addr)
+    1a88     1a88       44     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_addr)
+       0        0       92     1 .comment
+       0        0       92     1         <internal>:(.comment)
+       0        0       4d     1 .ARM.attributes
+       0        0       4d     1         <internal>:(.ARM.attributes)
+       0        0     42dc     4 .debug_frame
+       0        0       40     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_frame)
+      40       40      a00     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_frame)
+     a40      a40      404     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_frame)
+     e44      e44      2d0     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.debug_frame)
+    1114     1114      13c     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.debug_frame)
+    1250     1250       b4     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj:(.debug_frame)
+    1304     1304      10c     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj:(.debug_frame)
+    1410     1410       a8     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj:(.debug_frame)
+    14b8     14b8       c8     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.debug_frame)
+    1580     1580       60     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj:(.debug_frame)
+    15e0     15e0      144     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:(.debug_frame)
+    1724     1724      134     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj:(.debug_frame)
+    1858     1858       9c     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj:(.debug_frame)
+    18f4     18f4      194     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.debug_frame)
+    1a88     1a88      1f8     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.debug_frame)
+    1c80     1c80       cc     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj:(.debug_frame)
+    1d4c     1d4c      4d8     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.debug_frame)
+    2224     2224      178     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj:(.debug_frame)
+    239c     239c       6c     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.debug_frame)
+    2408     2408      398     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.debug_frame)
+    27a0     27a0      280     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj:(.debug_frame)
+    2a20     2a20      60c     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.debug_frame)
+    302c     302c      22c     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.debug_frame)
+    3258     3258      764     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.debug_frame)
+    39bc     39bc       b4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.debug_frame)
+    3a70     3a70      108     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.debug_frame)
+    3b78     3b78       68     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.debug_frame)
+    3be0     3be0       64     4         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.debug_frame)
+    3c44     3c44       e8     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.debug_frame)
+    3d2c     3d2c      100     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.debug_frame)
+    3e2c     3e2c       58     4         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj:(.debug_frame)
+    3e84     3e84       30     4         CMakeFiles/kaohe.dir/Core/Src/sysmem.c.obj:(.debug_frame)
+    3eb4     3eb4      1b4     4         CMakeFiles/kaohe.dir/Core/Src/syscalls.c.obj:(.debug_frame)
+    4068     4068       9c     4         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.debug_frame)
+    4104     4104       4c     4         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.debug_frame)
+    4150     4150       34     4         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_frame)
+    4184     4184       74     4         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_frame)
+    41f8     41f8       b0     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_frame)
+    42a8     42a8       34     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.debug_frame)
+       0        0    14846     1 .debug_line
+       0        0       f6     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_line)
+      f6       f6     35ca     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_line)
+    36c0     36c0     135b     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_line)
+    4a1b     4a1b      c1d     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj:(.debug_line)
+    5638     5638      854     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj:(.debug_line)
+    5e8c     5e8c      4c0     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj:(.debug_line)
+    634c     634c      537     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj:(.debug_line)
+    6883     6883      43b     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj:(.debug_line)
+    6cbe     6cbe      38e     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj:(.debug_line)
+    704c     704c      51d     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj:(.debug_line)
+    7569     7569      93b     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj:(.debug_line)
+    7ea4     7ea4      29e     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj:(.debug_line)
+    8142     8142      210     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj:(.debug_line)
+    8352     8352      4e5     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj:(.debug_line)
+    8837     8837      387     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.debug_line)
+    8bbe     8bbe      3a9     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj:(.debug_line)
+    8f67     8f67     2244     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:(.debug_line)
+    b1ab     b1ab      643     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj:(.debug_line)
+    b7ee     b7ee      1ba     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj:(.debug_line)
+    b9a8     b9a8     1364     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj:(.debug_line)
+    cd0c     cd0c      c96     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj:(.debug_line)
+    d9a2     d9a2     2089     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj:(.debug_line)
+    fa2b     fa2b      98d     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj:(.debug_line)
+   103b8    103b8     1b70     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj:(.debug_line)
+   11f28    11f28      46b     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj:(.debug_line)
+   12393    12393      41d     1         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.debug_line)
+   127b0    127b0      5bd     1         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.debug_line)
+   12d6d    12d6d      281     1         CMakeFiles/kaohe.dir/Core/Src/freertos.c.obj:(.debug_line)
+   12fee    12fee      26c     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_it.c.obj:(.debug_line)
+   1325a    1325a      3cd     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_msp.c.obj:(.debug_line)
+   13627    13627      19d     1         CMakeFiles/kaohe.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj:(.debug_line)
+   137c4    137c4       f7     1         CMakeFiles/kaohe.dir/Core/Src/sysmem.c.obj:(.debug_line)
+   138bb    138bb      357     1         CMakeFiles/kaohe.dir/Core/Src/syscalls.c.obj:(.debug_line)
+   13c12    13c12       6b     1         CMakeFiles/kaohe.dir/startup_stm32f407xx.s.obj:(.debug_line)
+   13c7d    13c7d      2ab     1         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.debug_line)
+   13f28    13f28      12c     1         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.debug_line)
+   14054    14054      128     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_line)
+   1417c    1417c      25b     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_line)
+   143d7    143d7      46f     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_line)
+       0        0     1c4d     1 .debug_line_str
+       0        0     1c4d     1         <internal>:(.debug_line_str)
+       0        0       28     1 .debug_aranges
+       0        0       28     1         CMakeFiles/kaohe.dir/startup_stm32f407xx.s.obj:(.debug_aranges)
+       0        0     28a0     4 .symtab
+       0        0     28a0     4         <internal>:(.symtab)
+       0        0      153     1 .shstrtab
+       0        0      153     1         <internal>:(.shstrtab)
+       0        0     21aa     1 .strtab
+       0        0     21aa     1         <internal>:(.strtab)

@@ -1,0 +1,5 @@
+Buzzer/Src/buzzer.c:32:Buzzer_SetFreq	0	static
+Buzzer/Src/buzzer.c:51:Buzzer_Init	8	static
+Buzzer/Src/buzzer.c:59:Buzzer_PlayNote	16	static
+Buzzer/Src/buzzer.c:73:Buzzer_PlayBootBeep	24	static
+Buzzer/Src/buzzer.c:117:Buzzer_PlayErrorTone	32	static
