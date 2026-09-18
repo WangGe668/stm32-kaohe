@@ -142,23 +142,26 @@ void StartMotorCtrlTask(void *argument)
   Motor_Init();
   HAL_CAN_Start(&hcan1);
   HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
-  osDelay(500);
+  osDelay(500); 
 
   uint32_t tick = 0;
+
   for(;;)
   {
-      if (tick < 2000) {
-          pid_angle.setpoint = 90.0f * tick / 2000.0f;
-      } else if (tick < 4000) {
-          pid_angle.setpoint = 90.0f - 180.0f * (tick - 2000) / 2000.0f;
-      } else {
+      if (tick < 1000) {
+          pid_angle.setpoint = 90.0f * tick / 1000.0f;
+      }
+      else if (tick < 2000) {
+          pid_angle.setpoint = 90.0f - 180.0f * (tick - 1000) / 1000.0f;
+      }
+      else {
           pid_angle.setpoint = -90.0f;
       }
+
       Motor_ControlLoop();
       tick++;
-      osDelay(1);
+      osDelay(1); 
   }
 }
-
 /* USER CODE END Application */
 
