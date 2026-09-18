@@ -1,6 +1,6 @@
-Motor/Src/motor.c:10:PID_Init	0	static
-Motor/Src/motor.c:21:PID_Calc	0	static
-Motor/Src/motor.c:46:Motor_Init	0	static
-Motor/Src/motor.c:60:Motor_SendCurrent	72	static
-Motor/Src/motor.c:81:Motor_Update	8	static
-Motor/Src/motor.c:110:Motor_ControlLoop	72	static
+Motor/Src/motor.c:11:PID_Init	0	static
+Motor/Src/motor.c:23:PID_Calc	0	static
+Motor/Src/motor.c:48:Motor_Init	0	static
+Motor/Src/motor.c:63:Motor_SendCurrent	72	static
+Motor/Src/motor.c:83:Motor_Update	8	static
+Motor/Src/motor.c:113:Motor_ControlLoop	72	static

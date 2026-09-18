@@ -3,7 +3,7 @@ STMicroelectronics Memory Configuration
 Name     Origin   Length   Bytes-Used %age-Used Attributes
 RAM 0x20000000 0x020000 0x005200       16%  rwx     
 CCMRAM 0x10000000 0x010000 0x000000        0%  rwx     
-FLASH 0x8000000 0x100000 0x005718        2%  rx      
+FLASH 0x8000000 0x100000 0x00574c        2%  rx      
 
      VMA      LMA     Size Align Out     In      Symbol
        0        0        0     1 _estack = ORIGIN(RAM) + LENGTH(RAM)
@@ -15,7 +15,7 @@ FLASH 0x8000000 0x100000 0x005718        2%  rx
  8000000  8000000      188     1         CMakeFiles/kaohe.dir/startup_stm32f407xx.s.obj:(.isr_vector)
  8000000  8000000      188     1                 g_pfnVectors
  8000188  8000188        0     1         . = ALIGN(4)
- 8000190  8000190     53f0    16 .text
+ 8000190  8000190     5424    16 .text
  8000190  8000190        0     1         . = ALIGN(4)
  8000190  8000190       14     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libclang_rt.builtins.a(aeabi_uldivmod.S.obj):(.text)
  8000190  8000190        0     1                 $t
@@ -603,124 +603,124 @@ FLASH 0x8000000 0x100000 0x005718        2%  rx
  8004f78  8004f78       5c     4         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.text.HAL_UART_ErrorCallback)
  8004f78  8004f78        0     1                 $t
  8004f79  8004f79       5c     1                 HAL_UART_ErrorCallback
- 8004fd4  8004fd4       8e     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.text.Motor_Init)
+ 8004fd4  8004fd4       86     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.text.Motor_Init)
  8004fd4  8004fd4        0     1                 $t
- 8004fd5  8004fd5       8e     1                 Motor_Init
- 8005064  8005064       ac     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.text.Motor_Update)
- 8005064  8005064        0     1                 $t
- 8005065  8005065       ac     1                 Motor_Update
- 8005108  8005108        0     1                 $d
- 8005110  8005110      22c     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.text.Motor_ControlLoop)
- 8005110  8005110        0     1                 $t
- 8005111  8005111      22c     1                 Motor_ControlLoop
- 8005334  8005334        0     1                 $d
- 800533c  800533c      1be     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libclang_rt.builtins.a(udivmoddi4.c.obj):(.text.__udivmoddi4)
- 800533c  800533c        0     1                 $t
- 800533d  800533d      1be     1                 __udivmoddi4
- 80054fa  80054fa        a     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(aeabi_memset.c.o):(.text.__aeabi_memset)
- 80054fa  80054fa        0     1                 $t
- 80054fb  80054fb        a     1                 __aeabi_memset
- 80054fb  80054fb        a     1                 __aeabi_memset4
- 80054fb  80054fb        a     1                 __aeabi_memset8
- 8005504  8005504        8     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(bzero.c.o):(.text.bzero)
- 8005504  8005504        0     1                 $t
- 8005505  8005505        8     1                 bzero
- 8005505  8005505        8     1                 __aeabi_memclr4
- 8005505  8005505        8     1                 __aeabi_memclr8
- 8005505  8005505        8     1                 __aeabi_memclr
- 800550c  800550c       12     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(memcpy.c.o):(.text.memcpy)
- 800550c  800550c        0     1                 $t
- 800550d  800550d       12     1                 memcpy
- 800550d  800550d       12     1                 __aeabi_memcpy4
- 800550d  800550d       12     1                 __aeabi_memcpy8
- 800550d  800550d       12     1                 __aeabi_memcpy
- 800551e  800551e        e     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(memset.c.o):(.text.memset)
- 800551e  800551e        0     1                 $t
- 800551f  800551f        e     1                 memset
- 800552c  800552c       30     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_misc_init.c.o):(.text.__libc_init_array)
- 800552c  800552c        0     1                 $t
- 800552d  800552d       30     1                 __libc_init_array
- 800554c  800554c        0     1                 $d
- 800555c  800555c       10     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.text._initial_set_tls)
- 800555c  800555c        0     1                 $t
- 800555d  800555d        6     1                 _initial_set_tls
- 8005564  8005564        0     1                 $d
- 800556c  800556c       14     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_set_tls.c.o):(.text._set_tls)
- 800556c  800556c        0     1                 $t
- 800556d  800556d       14     1                 _set_tls
- 8005578  8005578        0     1                 $d
- 8005580  8005580        0     1         . = ALIGN(4)
- 8005580  8005580        0     1         _etext = .
- 8005580  8005580      174     4 .rodata
- 8005580  8005580        0     1         . = ALIGN(4)
- 8005580  8005580       10     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.rodata.AHBPrescTable)
- 8005580  8005580       10     1                 AHBPrescTable
- 8005590  8005590        8     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.rodata.APBPrescTable)
- 8005590  8005590        8     1                 APBPrescTable
- 8005598  8005598       43     1         <internal>:(.rodata.str1.1)
- 80055dc  80055dc       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.LedTask_attributes)
- 80055dc  80055dc       24     1                 LedTask_attributes
- 8005600  8005600       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.ServoSweep_attributes)
- 8005600  8005600       24     1                 ServoSweep_attributes
- 8005624  8005624       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.CommTask_attributes)
- 8005624  8005624       24     1                 CommTask_attributes
- 8005648  8005648       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.MotorCtrl_attributes)
- 8005648  8005648       24     1                 MotorCtrl_attributes
- 800566c  800566c       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.BuzzerTask_attributes)
- 800566c  800566c       24     1                 BuzzerTask_attributes
- 8005690  8005690       20     4         <internal>:(.rodata.cst16)
- 80056b0  80056b0       20     4         <internal>:(.rodata.cst32)
- 80056d0  80056d0       18     4         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.rodata..L__const.Play_Error2.m)
- 80056d0  80056d0       18     1                 .L__const.Play_Error2.m
- 80056e8  80056e8        c     2         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.rodata..L__const.Play_Error2.d)
- 80056e8  80056e8        c     1                 .L__const.Play_Error2.d
- 80056f4  80056f4        0     1         . = ALIGN(4)
- 80056f4  80056f4        0     1 .ARM.extab
- 80056f4  80056f4        0     1         . = ALIGN(4)
- 80056f4  80056f4        0     1         . = ALIGN(4)
- 80056f4  80056f4       10     4 .ARM
- 80056f4  80056f4        0     1         . = ALIGN(4)
- 80056f4  80056f4        0     1         __exidx_start = .
- 80056f4  80056f4       10     4         <internal>:(.ARM.exidx)
- 8005704  8005704        0     1         __exidx_end = .
- 8005704  8005704        0     1         . = ALIGN(4)
- 8005704  8005704        4     4 .preinit_array
- 8005704  8005704        0     1         . = ALIGN(4)
- 8005704  8005704        0     1         PROVIDE_HIDDEN (__preinit_array_start = .)
- 8005704  8005704        4     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.preinit_array)
- 8005708  8005708        0     1         PROVIDE_HIDDEN (__preinit_array_end = .)
- 8005708  8005708        0     1         . = ALIGN(4)
- 8005708  8005708        0     1 .init_array
- 8005708  8005708        0     1         . = ALIGN(4)
- 8005708  8005708        0     1         PROVIDE_HIDDEN (__init_array_start = .)
- 8005708  8005708        0     1         PROVIDE_HIDDEN (__init_array_end = .)
- 8005708  8005708        0     1         . = ALIGN(4)
- 8005708  8005708        0     1 .fini_array
- 8005708  8005708        0     1         . = ALIGN(4)
- 8005708  8005708        0     1         . = ALIGN(4)
- 8005708  8005708        0     1 _siccmram = LOADADDR(.ccmram)
+ 8004fd5  8004fd5       86     1                 Motor_Init
+ 800505c  800505c       ac     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.text.Motor_Update)
+ 800505c  800505c        0     1                 $t
+ 800505d  800505d       ac     1                 Motor_Update
+ 8005100  8005100        0     1                 $d
+ 8005108  8005108      268     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.text.Motor_ControlLoop)
+ 8005108  8005108        0     1                 $t
+ 8005109  8005109      268     1                 Motor_ControlLoop
+ 8005368  8005368        0     1                 $d
+ 8005370  8005370      1be     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libclang_rt.builtins.a(udivmoddi4.c.obj):(.text.__udivmoddi4)
+ 8005370  8005370        0     1                 $t
+ 8005371  8005371      1be     1                 __udivmoddi4
+ 800552e  800552e        a     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(aeabi_memset.c.o):(.text.__aeabi_memset)
+ 800552e  800552e        0     1                 $t
+ 800552f  800552f        a     1                 __aeabi_memset
+ 800552f  800552f        a     1                 __aeabi_memset4
+ 800552f  800552f        a     1                 __aeabi_memset8
+ 8005538  8005538        8     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(bzero.c.o):(.text.bzero)
+ 8005538  8005538        0     1                 $t
+ 8005539  8005539        8     1                 bzero
+ 8005539  8005539        8     1                 __aeabi_memclr4
+ 8005539  8005539        8     1                 __aeabi_memclr8
+ 8005539  8005539        8     1                 __aeabi_memclr
+ 8005540  8005540       12     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(memcpy.c.o):(.text.memcpy)
+ 8005540  8005540        0     1                 $t
+ 8005541  8005541       12     1                 memcpy
+ 8005541  8005541       12     1                 __aeabi_memcpy4
+ 8005541  8005541       12     1                 __aeabi_memcpy8
+ 8005541  8005541       12     1                 __aeabi_memcpy
+ 8005552  8005552        e     2         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(memset.c.o):(.text.memset)
+ 8005552  8005552        0     1                 $t
+ 8005553  8005553        e     1                 memset
+ 8005560  8005560       30     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_misc_init.c.o):(.text.__libc_init_array)
+ 8005560  8005560        0     1                 $t
+ 8005561  8005561       30     1                 __libc_init_array
+ 8005580  8005580        0     1                 $d
+ 8005590  8005590       10     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.text._initial_set_tls)
+ 8005590  8005590        0     1                 $t
+ 8005591  8005591        6     1                 _initial_set_tls
+ 8005598  8005598        0     1                 $d
+ 80055a0  80055a0       14     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_set_tls.c.o):(.text._set_tls)
+ 80055a0  80055a0        0     1                 $t
+ 80055a1  80055a1       14     1                 _set_tls
+ 80055ac  80055ac        0     1                 $d
+ 80055b4  80055b4        0     1         . = ALIGN(4)
+ 80055b4  80055b4        0     1         _etext = .
+ 80055b4  80055b4      174     4 .rodata
+ 80055b4  80055b4        0     1         . = ALIGN(4)
+ 80055b4  80055b4       10     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.rodata.AHBPrescTable)
+ 80055b4  80055b4       10     1                 AHBPrescTable
+ 80055c4  80055c4        8     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.rodata.APBPrescTable)
+ 80055c4  80055c4        8     1                 APBPrescTable
+ 80055cc  80055cc       43     1         <internal>:(.rodata.str1.1)
+ 8005610  8005610       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.LedTask_attributes)
+ 8005610  8005610       24     1                 LedTask_attributes
+ 8005634  8005634       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.ServoSweep_attributes)
+ 8005634  8005634       24     1                 ServoSweep_attributes
+ 8005658  8005658       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.CommTask_attributes)
+ 8005658  8005658       24     1                 CommTask_attributes
+ 800567c  800567c       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.MotorCtrl_attributes)
+ 800567c  800567c       24     1                 MotorCtrl_attributes
+ 80056a0  80056a0       24     4         CMakeFiles/kaohe.dir/Core/Src/main.c.obj:(.rodata.BuzzerTask_attributes)
+ 80056a0  80056a0       24     1                 BuzzerTask_attributes
+ 80056c4  80056c4       20     4         <internal>:(.rodata.cst16)
+ 80056e4  80056e4       20     4         <internal>:(.rodata.cst32)
+ 8005704  8005704       18     4         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.rodata..L__const.Play_Error2.m)
+ 8005704  8005704       18     1                 .L__const.Play_Error2.m
+ 800571c  800571c        c     2         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.rodata..L__const.Play_Error2.d)
+ 800571c  800571c        c     1                 .L__const.Play_Error2.d
+ 8005728  8005728        0     1         . = ALIGN(4)
+ 8005728  8005728        0     1 .ARM.extab
+ 8005728  8005728        0     1         . = ALIGN(4)
+ 8005728  8005728        0     1         . = ALIGN(4)
+ 8005728  8005728       10     4 .ARM
+ 8005728  8005728        0     1         . = ALIGN(4)
+ 8005728  8005728        0     1         __exidx_start = .
+ 8005728  8005728       10     4         <internal>:(.ARM.exidx)
+ 8005738  8005738        0     1         __exidx_end = .
+ 8005738  8005738        0     1         . = ALIGN(4)
+ 8005738  8005738        4     4 .preinit_array
+ 8005738  8005738        0     1         . = ALIGN(4)
+ 8005738  8005738        0     1         PROVIDE_HIDDEN (__preinit_array_start = .)
+ 8005738  8005738        4     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.preinit_array)
+ 800573c  800573c        0     1         PROVIDE_HIDDEN (__preinit_array_end = .)
+ 800573c  800573c        0     1         . = ALIGN(4)
+ 800573c  800573c        0     1 .init_array
+ 800573c  800573c        0     1         . = ALIGN(4)
+ 800573c  800573c        0     1         PROVIDE_HIDDEN (__init_array_start = .)
+ 800573c  800573c        0     1         PROVIDE_HIDDEN (__init_array_end = .)
+ 800573c  800573c        0     1         . = ALIGN(4)
+ 800573c  800573c        0     1 .fini_array
+ 800573c  800573c        0     1         . = ALIGN(4)
+ 800573c  800573c        0     1         . = ALIGN(4)
+ 800573c  800573c        0     1 _siccmram = LOADADDR(.ccmram)
 10000000 10000000        0     1 .ccmram
 10000000 10000000        0     1         . = ALIGN(4)
 10000000 10000000        0     1         _sccmram = .
 10000000 10000000        0     1         . = ALIGN(4)
 10000000 10000000        0     1         _eccmram = .
 10000000 10000000        0     1 _sidata = LOADADDR(.data)
-20000000  8005708       10     4 .data
-20000000  8005708        0     1         . = ALIGN(4)
-20000000  8005708        0     1         _sdata = .
-20000000  8005708        4     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.data.SystemCoreClock)
-20000000  8005708        4     1                 SystemCoreClock
-20000004  800570c        4     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.data.uwTickPrio)
-20000004  800570c        4     1                 uwTickPrio
-20000008  8005710        1     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.data.uwTickFreq)
-20000008  8005710        1     1                 uwTickFreq
-2000000c  8005714        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.data.uxCriticalNesting)
-2000000c  8005714        4     1                 uxCriticalNesting
-20000010  8005718        0     1         . = ALIGN(4)
-20000010  8005718        0     4 .tdata
-20000010  8005718        0     1         . = ALIGN(4)
-20000010  8005718        0     1         _edata = .
-20000010  8005718        0     1 PROVIDE( __tdata_start = ADDR(.tdata) )
+20000000  800573c       10     4 .data
+20000000  800573c        0     1         . = ALIGN(4)
+20000000  800573c        0     1         _sdata = .
+20000000  800573c        4     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.data.SystemCoreClock)
+20000000  800573c        4     1                 SystemCoreClock
+20000004  8005740        4     4         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.data.uwTickPrio)
+20000004  8005740        4     1                 uwTickPrio
+20000008  8005744        1     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj:(.data.uwTickFreq)
+20000008  8005744        1     1                 uwTickFreq
+2000000c  8005748        4     4         cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj:(.data.uxCriticalNesting)
+2000000c  8005748        4     1                 uxCriticalNesting
+20000010  800574c        0     1         . = ALIGN(4)
+20000010  800574c        0     4 .tdata
+20000010  800574c        0     1         . = ALIGN(4)
+20000010  800574c        0     1         _edata = .
+20000010  800574c        0     1 PROVIDE( __tdata_start = ADDR(.tdata) )
 20000010 20000010        0     4 .tbss
 20000010 20000010        0     1         _sbss = .
 20000010 20000010        0     1         __bss_start__ = _sbss
@@ -872,7 +872,7 @@ FLASH 0x8000000 0x100000 0x005718        2%  rx
 20004c00 20004c00      200     1         . = . + _Min_Heap_Size
 20004e00 20004e00      400     1         . = . + _Min_Stack_Size
 20005200 20005200        0     1         . = ALIGN(8)
-       0        0     c087     1 .debug_loclists
+       0        0     c0cf     1 .debug_loclists
        0        0       6b     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_loclists)
       6b       6b     255f     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_loclists)
     25ca     25ca      aff     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_loclists)
@@ -908,7 +908,7 @@ FLASH 0x8000000 0x100000 0x005718        2%  rx
     bca7     bca7       ee     1         CMakeFiles/kaohe.dir/Buzzer/Src/buzzer.c.obj:(.debug_loclists)
     bd95     bd95       18     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_loclists)
     bdad     bdad      12c     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_loclists)
-    bed9     bed9      1ae     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_loclists)
+    bed9     bed9      1f6     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_loclists)
        0        0     48dd     1 .debug_abbrev
        0        0       da     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_abbrev)
       da       da      2f7     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_abbrev)
@@ -949,7 +949,7 @@ FLASH 0x8000000 0x100000 0x005718        2%  rx
     4446     4446      137     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_abbrev)
     457d     457d      1c7     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_abbrev)
     4744     4744      199     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_abbrev)
-       0        0    18672     1 .debug_info
+       0        0    186c9     1 .debug_info
        0        0      357     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_info)
      357      357     296d     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_info)
     2cc4     2cc4      fc9     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_info)
@@ -988,7 +988,7 @@ FLASH 0x8000000 0x100000 0x005718        2%  rx
    171cc    171cc      4f0     1         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.debug_info)
    176bc    176bc      4b8     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_info)
    17b74    17b74      5a1     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_info)
-   18115    18115      55d     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_info)
+   18115    18115      5b4     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_info)
        0        0     146c     1 .debug_rnglists
        0        0       18     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_rnglists)
       18       18      374     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_rnglists)
@@ -1069,7 +1069,7 @@ FLASH 0x8000000 0x100000 0x005718        2%  rx
     5c00     5c00      17c     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_str_offsets)
        0        0     99d9     1 .debug_str
        0        0     99d9     1         <internal>:(.debug_str)
-       0        0     1acc     1 .debug_addr
+       0        0     1ad4     1 .debug_addr
        0        0       1c     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_addr)
       1c       1c      298     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_addr)
      2b4      2b4       ec     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_addr)
@@ -1107,7 +1107,7 @@ FLASH 0x8000000 0x100000 0x005718        2%  rx
     1a24     1a24       18     1         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.debug_addr)
     1a3c     1a3c       14     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_addr)
     1a50     1a50       38     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_addr)
-    1a88     1a88       44     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_addr)
+    1a88     1a88       4c     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_addr)
        0        0       92     1 .comment
        0        0       92     1         <internal>:(.comment)
        0        0       4d     1 .ARM.attributes
@@ -1152,7 +1152,7 @@ FLASH 0x8000000 0x100000 0x005718        2%  rx
     4184     4184       74     4         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_frame)
     41f8     41f8       b0     4         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_frame)
     42a8     42a8       34     4         C:/Users/27638/AppData/Local/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_hard_fpv4_sp_d16_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.debug_frame)
-       0        0    14846     1 .debug_line
+       0        0    1486d     1 .debug_line
        0        0       f6     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj:(.debug_line)
       f6       f6     35ca     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj:(.debug_line)
     36c0     36c0     135b     1         cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj:(.debug_line)
@@ -1191,7 +1191,7 @@ FLASH 0x8000000 0x100000 0x005718        2%  rx
    13f28    13f28      12c     1         CMakeFiles/kaohe.dir/Led/Src/led.c.obj:(.debug_line)
    14054    14054      128     1         CMakeFiles/kaohe.dir/Servo/Src/servo.c.obj:(.debug_line)
    1417c    1417c      25b     1         CMakeFiles/kaohe.dir/Comm/Src/comm.c.obj:(.debug_line)
-   143d7    143d7      46f     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_line)
+   143d7    143d7      496     1         CMakeFiles/kaohe.dir/Motor/Src/motor.c.obj:(.debug_line)
        0        0     1c4d     1 .debug_line_str
        0        0     1c4d     1         <internal>:(.debug_line_str)
        0        0       28     1 .debug_aranges

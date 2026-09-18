@@ -1,9 +1,10 @@
 #include "motor.h"
-#include "comm.h"   
+#include "comm.h"
 
 motor_measure_t motor[MOTOR_COUNT];
 PID_t pid_angle;
 PID_t pid_speed;
+
 
 //PID 初始化
 
@@ -15,6 +16,7 @@ void PID_Init(PID_t *pid, float kp, float ki, float kd, float out_max, float int
     pid->out_max = out_max;
     pid->int_max = int_max;
 }
+
 
 //PID 计算
 
@@ -45,8 +47,8 @@ float PID_Calc(PID_t *pid, float setpoint, float feedback)
 
 void Motor_Init(void)
 {
-    PID_Init(&pid_angle, 25.0f, 0.0f, 1.2f, 5000.0f, 1000.0f);
-    PID_Init(&pid_speed, 15.0f, 0.2f, 0.0f, 16000.0f, 1000.0f);
+    PID_Init(&pid_angle, 8.0f, 0.1f, 3.0f, 5000.0f, 1000.0f);
+    PID_Init(&pid_speed, 10.0f, 0.1f, 0.0f, 16000.0f, 1000.0f);
 
     for (int i = 0; i < MOTOR_COUNT; i++) {
         motor[i].initialized = 0;
@@ -54,6 +56,7 @@ void Motor_Init(void)
         motor[i].total_angle = 0;
     }
 }
+
 
 //通过 CAN 发送电流指令
 
@@ -76,8 +79,7 @@ void Motor_SendCurrent(int16_t c1, int16_t c2, int16_t c3, int16_t c4)
     HAL_CAN_AddTxMessage(&hcan1, &tx, data, &mailbox);
 }
 
-//处理 CAN 接收到的电机反馈
-
+//处理 CAN 接收到的电机反馈, total_angle：输出轴累计角度（已除减速比 19.203）
 void Motor_Update(CAN_RxHeaderTypeDef *hdr, uint8_t *data)
 {
     uint8_t id = hdr->StdId - 0x201;
@@ -96,7 +98,7 @@ void Motor_Update(CAN_RxHeaderTypeDef *hdr, uint8_t *data)
         if (delta < -4096) delta += 8192;
         motor[id].total_ecd  += delta;
         motor[id].last_ecd    = new_ecd;
-        motor[id].total_angle = motor[id].total_ecd / ENCODER_RES * 360.0f;
+        motor[id].total_angle = motor[id].total_ecd / (ENCODER_RES * 19.203f) * 360.0f;
     }
 
     motor[id].ecd           = new_ecd;
@@ -105,13 +107,21 @@ void Motor_Update(CAN_RxHeaderTypeDef *hdr, uint8_t *data)
     motor[id].temperate     = data[6];
 }
 
-//控制循环：串级 PID + Synex 打印
+
+ //控制循环：串级 PID + Synex 打印（3 通道）
 
 void Motor_ControlLoop(void)
 {
-    float target_rpm = PID_Calc(&pid_angle, pid_angle.setpoint, motor[0].total_angle);
-    float target_cur = PID_Calc(&pid_speed, target_rpm, (float)motor[0].speed_rpm);
-    Motor_SendCurrent((int16_t)target_cur, 0, 0, 0);
+    float error = pid_angle.setpoint - motor[0].total_angle;
+
+    /* 死区：误差在 ±2° 以内就不动 */
+    if (error > -2.0f && error < 2.0f) {
+        Motor_SendCurrent(0, 0, 0, 0);
+    } else {
+        float target_rpm = PID_Calc(&pid_angle, pid_angle.setpoint, motor[0].total_angle);
+        float target_cur = PID_Calc(&pid_speed, target_rpm, (float)motor[0].speed_rpm);
+        Motor_SendCurrent((int16_t)target_cur, 0, 0, 0);
+    }
 
     static uint8_t print_cnt = 0;
     if (++print_cnt >= 100) {
